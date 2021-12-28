@@ -2,6 +2,30 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiJquery,
+  SiTypescript,
+  SiReact,
+  SiFirebase,
+  SiMaterialui,
+  SiRedux,
+  SiNextdotjs,
+  SiMongodb,
+  SiTailwindcss,
+  SiBootstrap,
+  SiExpress,
+  SiGithub,
+  SiGitlab,
+  SiFigma,
+  SiBitbucket,
+  SiHeroku,
+  SiSlack,
+  SiTrello,
+} from "react-icons/si";
+import { FaSass, FaNodeJs } from "react-icons/fa";
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +40,34 @@ const Home: NextPage = () => {
         <h1>
           Hello, I am Miyabi Tanimichi, Front End Developer based in Vancouver
         </h1>
+        <h3></h3>
+        <p>Skills</p>
+        <div>
+          <SiHtml5 />
+          <SiCss3 />
+          <FaSass />
+          <SiJavascript />
+          <SiJquery />
+
+          <SiTypescript />
+          <SiReact />
+          <SiRedux />
+          <SiNextdotjs />
+          <SiMaterialui />
+          <SiTailwindcss />
+          <SiBootstrap />
+          <FaNodeJs />
+          <SiExpress />
+          <SiFirebase />
+          <SiMongodb />
+          <SiGithub />
+          <SiGitlab />
+          <SiBitbucket />
+          <SiSlack />
+          <SiTrello />
+          <SiFigma />
+          <SiHeroku />
+        </div>
 
         {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
