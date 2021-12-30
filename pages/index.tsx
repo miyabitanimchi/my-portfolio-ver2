@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
+import utilStyles from "../styles/utils.module.scss";
 import {
   SiHtml5,
   SiCss3,
@@ -37,39 +38,46 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1>
-          Hello, I am Miyabi Tanimichi, Front End Developer based in Vancouver
-        </h1>
-        <h3></h3>
-        <p>Skills</p>
-        <div>
-          <SiHtml5 />
-          <SiCss3 />
-          <FaSass />
-          <SiJavascript />
-          <SiJquery />
+        <section>
+          <div className={styles.titlesWrap}>
+            <h1 className={utilStyles.heading2Xl}>
+              Hello, I am <span className={styles.name}>MIYABI TANIMICHI</span>
+            </h1>
+            <h2 className={utilStyles.headingXl}>
+              A motivated, passionate and open-minded Front End Developer based
+              in Vancouver
+            </h2>
+          </div>
+          <div className={styles.skillsWrap}>
+            <h3 className={utilStyles.headingLg}>Skills</h3>
+            <div className={styles.skillsIcons}>
+              <SiHtml5 />
+              <SiCss3 />
+              <FaSass />
+              <SiJavascript />
+              <SiJquery />
+              <SiTypescript />
+              <SiReact />
+              <SiRedux />
+              <SiNextdotjs />
+              <SiMaterialui />
+              <SiTailwindcss />
+              <SiBootstrap />
+              <FaNodeJs />
+              <SiExpress />
+              <SiFirebase />
+              <SiMongodb />
+              <SiGithub />
+              <SiGitlab />
+              <SiBitbucket />
+              <SiSlack />
+              <SiTrello />
+              <SiFigma />
+              <SiHeroku />
+            </div>
+          </div>
 
-          <SiTypescript />
-          <SiReact />
-          <SiRedux />
-          <SiNextdotjs />
-          <SiMaterialui />
-          <SiTailwindcss />
-          <SiBootstrap />
-          <FaNodeJs />
-          <SiExpress />
-          <SiFirebase />
-          <SiMongodb />
-          <SiGithub />
-          <SiGitlab />
-          <SiBitbucket />
-          <SiSlack />
-          <SiTrello />
-          <SiFigma />
-          <SiHeroku />
-        </div>
-
-        {/* <div className={styles.grid}>
+          {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -98,6 +106,7 @@ const Home: NextPage = () => {
             </p>
           </a>
         </div> */}
+        </section>
       </main>
 
       {/* <footer className={styles.footer}>
