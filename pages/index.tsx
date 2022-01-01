@@ -28,6 +28,8 @@ import {
 } from "react-icons/si";
 import { FaSass, FaNodeJs } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { CgArrowLongDown } from "react-icons/cg";
+import { GrLocation } from "react-icons/gr";
 import projectsData from "../projectsData/projectsdata";
 
 const Home: NextPage = () => {
@@ -53,16 +55,15 @@ const Home: NextPage = () => {
             <h3 className={utilStyles.headingSecJumbo}>Front End Developer</h3>
           </div>
           <div className={styles.navigator}>
-            <MdKeyboardArrowDown className={styles.arrow} />
-            {/* <p className={styles.arrow}>↖️</p> */}
+            <CgArrowLongDown className={styles.arrow} />
           </div>
         </section>
         <section className={styles.aboutSection}>
           <div className={styles.aboutContainer}>
             <h3 className={`${styles.title} ${utilStyles.heading2Xl}`}>
-              Hello, I'm Miyabi
+              Hello, I'm Miyabi :)
             </h3>
-            <div className={styles.titlePicWrap}>
+            <div className={styles.imgDescriptionWrap}>
               <Image
                 priority
                 src="/images/miyabi.JPG"
@@ -71,30 +72,16 @@ const Home: NextPage = () => {
                 width={300}
                 alt="miyabi"
               />
-              <p className={`${styles.description} ${utilStyles.textMd}`}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                doloribus voluptates alias magni deserunt. Hic recusandae
-                expedita quidem velit, debitis odit possimus eum temporibus
-                adipisci omnis maxime ut modi quisquam. Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Nobis doloribus voluptates
-                alias magni deserunt. Hic recusandae expedita quidem velit,
-                debitis odit possimus eum temporibus adipisci omnis maxime ut
-                modi quisquam. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Nobis doloribus voluptates alias magni
-                deserunt. Hic recusandae expedita quidem velit, debitis odit
-                possimus eum temporibus adipisci omnis maxime ut modi quisquam.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                doloribus voluptates alias magni deserunt. Hic recusandae
-                expedita quidem velit, debitis odit possimus eum temporibus
-                adipisci omnis maxime ut modi quisquam. Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Nobis doloribus voluptates
-                alias magni deserunt. Hic recusandae expedita quidem velit,
-                debitis odit possimus eum temporibus adipisci omnis maxime ut
-                modi quisquam. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Nobis doloribus voluptates alias magni
-                deserunt. Hic recusandae expedita quidem velit, debitis odit
-                possimus eum temporibus adipisci omnis maxime ut modi quisquam.
-              </p>
+              <div className={`${styles.descriptionWrap} ${utilStyles.textMd}`}>
+                <div className={styles.locationWrap}>
+                  <GrLocation />
+                  <p className={styles.location}>Vancouver, Canada</p>
+                </div>
+                <p className={`${styles.description} `}>
+                  I'm a front end developer who is curious, motivated and always
+                  eager to learn new skills.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -106,7 +93,7 @@ const Home: NextPage = () => {
               Works
             </h3>
             {projectsData?.map((project) => (
-              <div className={styles.projectWrap}>
+              <div className={styles.projectWrap} key={project.id}>
                 <p
                   className={`${utilStyles.headingSecJumbo} ${utilStyles.gradientPinkBlue} ${utilStyles.gradientTextKit} ${styles.workTitle}`}
                 >
@@ -117,8 +104,9 @@ const Home: NextPage = () => {
                     {project.shortDescription}
                   </p>
                   <div className={styles.techStackWrap}>
+                    <div>Tech Stack {">>"} </div>
                     {project.teckStack.map((techstack) => (
-                      <div className={styles.techStack}>
+                      <div className={styles.techStack} key={techstack}>
                         <span>{techstack}</span>
                       </div>
                     ))}
@@ -127,6 +115,19 @@ const Home: NextPage = () => {
               </div>
             ))}
           </div>
+        </section>
+        <section className={styles.contactSection}>
+          <p className={utilStyles.headingLg}>
+            Please Feel Free to Reach Out to Me!
+          </p>
+          <a
+            href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Let%27s+talk&to=miyabitanimichi@gmail.com"
+            className={`${utilStyles.heading3Xl} ${styles.emailLink} ${utilStyles.gradientGray} ${utilStyles.gradientTextKit}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            miyabitanimichi@gmail.com
+          </a>
         </section>
       </main>
     </div>

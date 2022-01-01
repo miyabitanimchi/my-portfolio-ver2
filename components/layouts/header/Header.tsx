@@ -9,14 +9,14 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav>
-        <Link href="/">
-          <a className={styles.menu}>Home</a>
-        </Link>
         <Link href="/about">
           <a className={styles.menu}>About</a>
         </Link>
         <Link href="/works">
           <a className={styles.menu}>Works</a>
+        </Link>
+        <Link href="/">
+          <a className={styles.menu}>Contact</a>
         </Link>
       </nav>
     </header>

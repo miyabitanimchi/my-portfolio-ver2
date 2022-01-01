@@ -43,7 +43,7 @@ const projectsData = [
   },
   {
     id: 3,
-    projectName: "Gloval Developers",
+    projectName: "Global Developers",
     feature: "React Application",
     status: "Team Work, Product",
     photoUrl: "",
