@@ -27,6 +27,7 @@ import {
   SiTrello,
 } from "react-icons/si";
 import { FaSass, FaNodeJs } from "react-icons/fa";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Home: NextPage = () => {
   return (
@@ -81,7 +82,51 @@ const Home: NextPage = () => {
             <h1 className={utilStyles.headingJumbo}>Tanimichi</h1>
           </div>
           <div className={styles.heroJobPosition}>
-            <h3 className={utilStyles.headingSubJumbo}>Front End Developer</h3>
+            <h3 className={utilStyles.headingSecJumbo}>Front End Developer</h3>
+          </div>
+          <div className={styles.navigator}>
+            <MdKeyboardArrowDown className={styles.arrow} />
+          </div>
+        </section>
+        <section className={styles.aboutSection}>
+          <div className={styles.aboutContainer}>
+            <h3 className={`${styles.title} ${utilStyles.heading2Xl}`}>
+              About Me
+            </h3>
+            <div className={styles.titlePicWrap}>
+              <Image
+                priority
+                src="/images/miyabi.JPG"
+                className={styles.image}
+                height={300}
+                width={300}
+                alt="miyabi"
+              />
+              <p className={`${styles.description} ${utilStyles.text}`}>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                doloribus voluptates alias magni deserunt. Hic recusandae
+                expedita quidem velit, debitis odit possimus eum temporibus
+                adipisci omnis maxime ut modi quisquam. Lorem, ipsum dolor sit
+                amet consectetur adipisicing elit. Nobis doloribus voluptates
+                alias magni deserunt. Hic recusandae expedita quidem velit,
+                debitis odit possimus eum temporibus adipisci omnis maxime ut
+                modi quisquam. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Nobis doloribus voluptates alias magni
+                deserunt. Hic recusandae expedita quidem velit, debitis odit
+                possimus eum temporibus adipisci omnis maxime ut modi quisquam.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                doloribus voluptates alias magni deserunt. Hic recusandae
+                expedita quidem velit, debitis odit possimus eum temporibus
+                adipisci omnis maxime ut modi quisquam. Lorem, ipsum dolor sit
+                amet consectetur adipisicing elit. Nobis doloribus voluptates
+                alias magni deserunt. Hic recusandae expedita quidem velit,
+                debitis odit possimus eum temporibus adipisci omnis maxime ut
+                modi quisquam. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Nobis doloribus voluptates alias magni
+                deserunt. Hic recusandae expedita quidem velit, debitis odit
+                possimus eum temporibus adipisci omnis maxime ut modi quisquam.
+              </p>
+            </div>
           </div>
         </section>
       </main>

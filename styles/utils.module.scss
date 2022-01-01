@@ -1,15 +1,23 @@
 .headingJumbo {
-  font-size: 12rem;
+  font-size: 15vw;
   // text-transform: uppercase;
+  text-transform: uppercase;
+  line-height: 16rem;
+  letter-spacing: 1rem;
+  font-weight: 500;
 }
 
-.headingSubJumbo {
-  font-size: 9rem;
+.headingSecJumbo {
+  font-size: 9vw;
+  line-height: 12rem;
+  letter-spacing: 0.12rem;
+  font-weight: 100;
 }
 
 .heading2Xl {
   font-size: 2.5rem;
-  margin: 1rem auto;
+  letter-spacing: 0.12rem;
+  font-weight: 100;
 }
 
 .headingXl {
@@ -25,4 +33,8 @@
 
 .headingMd {
   font-size: 1.2rem;
+}
+
+.text {
+  font-size: 1.3rem;
 }
