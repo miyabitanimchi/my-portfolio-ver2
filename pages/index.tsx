@@ -43,20 +43,34 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <section className={styles.heroSection}>
-          <div
-            className={`${utilStyles.gradientTextKit} ${utilStyles.gradientPinkBlue}`}
-          >
-            <h1 className={utilStyles.headingJumbo}>Miyabi</h1>
-            <h1 className={utilStyles.headingJumbo}>Tanimichi</h1>
+          <div className={styles.heroWrap}>
+            <div
+              className={`${utilStyles.gradientTextKit} ${utilStyles.gradientPinkBlue}`}
+            >
+              <h1 className={`${utilStyles.headingJumbo} ${styles.heroFName}`}>
+                Miyabi
+              </h1>
+              <h1 className={`${utilStyles.headingJumbo} ${styles.heroLName}`}>
+                Tanimichi
+              </h1>
+            </div>
+            <div
+              className={`${utilStyles.gradientTextKit} ${utilStyles.gradientGray} ${styles.jobPositionWrap}`}
+            >
+              <h3
+                className={`${utilStyles.headingSecJumbo} ${styles.jobPosition}`}
+              >
+                Front End Developer
+              </h3>
+            </div>
           </div>
-          <div
-            className={`${utilStyles.gradientTextKit} ${utilStyles.gradientGray}`}
-          >
-            <h3 className={utilStyles.headingSecJumbo}>Front End Developer</h3>
+          <div className={styles.arrowWrap}>
+            <div className={styles.arrow}></div>
+            <div className={styles.arrowTip}></div>
           </div>
-          <div className={styles.navigator}>
+          {/* <div className={styles.navigator}>
             <CgArrowLongDown className={styles.arrow} />
-          </div>
+          </div> */}
         </section>
         <section className={styles.aboutSection}>
           <div className={styles.aboutContainer}>
@@ -64,14 +78,19 @@ const Home: NextPage = () => {
               Hello, I'm Miyabi :)
             </h3>
             <div className={styles.imgDescriptionWrap}>
-              <Image
-                priority
-                src="/images/miyabi.JPG"
-                className={styles.image}
-                height={300}
-                width={300}
-                alt="miyabi"
-              />
+              <div className={styles.imgWrap}>
+                <Image
+                  priority
+                  src="/images/miyabi.JPG"
+                  className={styles.image}
+                  height={300}
+                  width={300}
+                  alt="miyabi"
+                />
+                <div
+                  className={`${styles.imgDecoration} ${utilStyles.gradientPinkBlue}`}
+                ></div>
+              </div>
               <div className={`${styles.descriptionWrap} ${utilStyles.textMd}`}>
                 <div className={styles.locationWrap}>
                   <GrLocation />
