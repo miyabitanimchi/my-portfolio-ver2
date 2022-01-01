@@ -28,6 +28,7 @@ import {
 } from "react-icons/si";
 import { FaSass, FaNodeJs } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import projectsData from "../projectsData/projectsdata";
 
 const Home: NextPage = () => {
   return (
@@ -40,58 +41,26 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <section className={styles.heroSection}>
-          {/* <div className={styles.titlesWrap}>
-            <h1 className={utilStyles.heading2Xl}>
-              Hello, I am <span className={styles.name}>MIYABI TANIMICHI</span>
-            </h1>
-            <h2 className={utilStyles.headingXl}>
-              A motivated, passionate and open-minded Front End Developer based
-              in Vancouver
-            </h2>
-          </div>
-          <div className={styles.skillsWrap}>
-            <h3 className={utilStyles.headingLg}>Skills</h3>
-            <div className={styles.skillsIcons}>
-              <SiHtml5 />
-              <SiCss3 />
-              <FaSass />
-              <SiJavascript />
-              <SiJquery />
-              <SiTypescript />
-              <SiReact />
-              <SiRedux />
-              <SiNextdotjs />
-              <SiMaterialui />
-              <SiTailwindcss />
-              <SiBootstrap />
-              <FaNodeJs />
-              <SiExpress />
-              <SiFirebase />
-              <SiMongodb />
-              <SiGithub />
-              <SiGitlab />
-              <SiBitbucket />
-              <SiSlack />
-              <SiTrello />
-              <SiFigma />
-              <SiHeroku />
-            </div>
-          </div> */}
-          <div className={styles.heroNames}>
+          <div
+            className={`${utilStyles.gradientTextKit} ${utilStyles.gradientPinkBlue}`}
+          >
             <h1 className={utilStyles.headingJumbo}>Miyabi</h1>
             <h1 className={utilStyles.headingJumbo}>Tanimichi</h1>
           </div>
-          <div className={styles.heroJobPosition}>
+          <div
+            className={`${utilStyles.gradientTextKit} ${utilStyles.gradientGray}`}
+          >
             <h3 className={utilStyles.headingSecJumbo}>Front End Developer</h3>
           </div>
           <div className={styles.navigator}>
             <MdKeyboardArrowDown className={styles.arrow} />
+            {/* <p className={styles.arrow}>↖️</p> */}
           </div>
         </section>
         <section className={styles.aboutSection}>
           <div className={styles.aboutContainer}>
             <h3 className={`${styles.title} ${utilStyles.heading2Xl}`}>
-              About Me
+              Hello, I'm Miyabi
             </h3>
             <div className={styles.titlePicWrap}>
               <Image
@@ -102,7 +71,7 @@ const Home: NextPage = () => {
                 width={300}
                 alt="miyabi"
               />
-              <p className={`${styles.description} ${utilStyles.text}`}>
+              <p className={`${styles.description} ${utilStyles.textMd}`}>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
                 doloribus voluptates alias magni deserunt. Hic recusandae
                 expedita quidem velit, debitis odit possimus eum temporibus
@@ -127,6 +96,36 @@ const Home: NextPage = () => {
                 possimus eum temporibus adipisci omnis maxime ut modi quisquam.
               </p>
             </div>
+          </div>
+        </section>
+        <section className={styles.workSection}>
+          <div className={styles.workContainer}>
+            <h3
+              className={`${utilStyles.headingJumbo} ${utilStyles.gradientGray} ${utilStyles.gradientTextKit} ${styles.title}`}
+            >
+              Works
+            </h3>
+            {projectsData?.map((project) => (
+              <div className={styles.projectWrap}>
+                <p
+                  className={`${utilStyles.headingSecJumbo} ${utilStyles.gradientPinkBlue} ${utilStyles.gradientTextKit} ${styles.workTitle}`}
+                >
+                  {project.projectName}
+                </p>
+                <div className={styles.projectDetails}>
+                  <p className={utilStyles.heading2Xl}>
+                    {project.shortDescription}
+                  </p>
+                  <div className={styles.techStackWrap}>
+                    {project.teckStack.map((techstack) => (
+                      <div className={styles.techStack}>
+                        <span>{techstack}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       </main>

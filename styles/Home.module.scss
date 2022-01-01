@@ -2,48 +2,7 @@
 .container {
   width: 100vw;
 }
-
-// .main {
-//   min-height: 100vh;
-//   flex: 1;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   // align-items: center;
-//   color: $title-color;
-
-//   .titlesWrap {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     margin-bottom: 2rem;
-//     .name {
-//       background: #4568dc;
-//       background: -webkit-linear-gradient(to right, #b06ab3, #4568dc);
-//       background: linear-gradient(to right, #b06ab3, #4568dc);
-//       background-clip: text;
-//       -webkit-background-clip: text;
-//       -webkit-text-fill-color: transparent;
-//       font-weight: 800;
-//     }
-//   }
-
-//   .skillsWrap {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     margin-bottom: 2rem;
-//     .skillsIcons {
-//       font-size: 1.5rem;
-//       display: flex;
-//       justify-content: center;
-//       gap: 0.5rem;
-//     }
-//   }
-// }
-
 .main {
-  // min-height: 100vh;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -53,24 +12,6 @@
   .heroSection {
     position: relative;
     margin-bottom: $section-mb;
-    .heroNames {
-      background: #4568dc;
-      background: -webkit-linear-gradient(to right, #b06ab3, #4568dc);
-      background: linear-gradient(to right, #b06ab3, #4568dc);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      // margin-bottom: 4rem;
-    }
-    .heroJobPosition {
-      background: #536976;
-      background: -webkit-linear-gradient(to left, #292e49, #536976);
-      background: linear-gradient(to left, #292e49, #536976);
-
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
     .navigator {
       width: 12rem;
       height: 12rem;
@@ -93,7 +34,6 @@
     width: 100%;
     margin-bottom: $section-mb;
     .aboutContainer {
-      // width: 100%;
       padding: 0 5rem;
       .title {
         margin-bottom: 5rem;
@@ -109,6 +49,32 @@
         .description {
           margin-left: 5rem;
           width: 50vw;
+        }
+      }
+    }
+  }
+  .workSection {
+    width: 100%;
+    margin-bottom: $section-mb;
+    .workContainer {
+      .title {
+        margin-bottom: 5rem;
+      }
+      .projectWrap {
+        .workTitle {
+          &:hover + .projectDetails {
+            opacity: 1;
+          }
+        }
+        .projectDetails {
+          cursor: pointer;
+          // margin-bottom: 3rem;
+          opacity: 0;
+          .techStackWrap {
+            display: flex;
+            gap: 1rem;
+            font-family: $second-font-family;
+          }
         }
       }
     }

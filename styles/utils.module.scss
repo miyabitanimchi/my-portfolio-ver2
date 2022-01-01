@@ -1,6 +1,5 @@
 .headingJumbo {
   font-size: 15vw;
-  // text-transform: uppercase;
   text-transform: uppercase;
   line-height: 16rem;
   letter-spacing: 1rem;
@@ -35,6 +34,23 @@
   font-size: 1.2rem;
 }
 
-.text {
+.textMd {
   font-size: 1.3rem;
+}
+
+.gradientPinkBlue {
+  background: #4568dc;
+  background: -webkit-linear-gradient(to right, #b06ab3, #4568dc);
+  background: linear-gradient(to right, #b06ab3, #4568dc);
+}
+
+.gradientGray {
+  background: #536976;
+  background: -webkit-linear-gradient(to left, #292e49, #536976);
+  background: linear-gradient(to left, #292e49, #536976);
+}
+.gradientTextKit {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
