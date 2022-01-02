@@ -6,7 +6,7 @@ const projectsData: IProjectData[] = [
     projectName: "Senpai Kohai",
     feature: "MERN stack application",
     status: "Team Work, Private",
-    photoUrl: "",
+    src: "/images/senpai-kohai.png",
     teckStack: [
       "React.js",
       "Redux",
@@ -28,7 +28,7 @@ const projectsData: IProjectData[] = [
     projectName: "Musician First",
     feature: "React Application",
     status: "Team Work, Product",
-    photoUrl: "",
+    src: "",
     teckStack: [
       "React.js",
       "Redux",
@@ -48,7 +48,7 @@ const projectsData: IProjectData[] = [
     projectName: "Global Developers",
     feature: "React Application",
     status: "Team Work, Product",
-    photoUrl: "",
+    src: "",
     teckStack: [
       "React.js",
       "Redux",
@@ -68,7 +68,7 @@ const projectsData: IProjectData[] = [
     projectName: "My Portfolio",
     feature: "React Application with TypeScript and Next.js",
     status: "Individual, Private",
-    photoUrl: "",
+    src: "",
     teckStack: ["React.js", "Next.js", "TypeScript", "Sass"],
     website: "",
     gitHub: "",

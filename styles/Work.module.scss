@@ -1,0 +1,15 @@
+@import "../styles/abstructs/variables";
+
+.main {
+  color: $main-font-color;
+  display: flex;
+  flex-direction: column;
+  .workSection {
+    margin-bottom: $section-mb;
+    padding-top: $section-pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

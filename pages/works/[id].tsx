@@ -1,15 +1,26 @@
 import React from "react";
 import { IProjectData } from "../../types/index";
 import { GetStaticProps, GetStaticPaths } from "next";
-import Layout from "../../components/layouts/Layout";
 import projectsData from "../../projectsData/projectsData";
+import styles from "../../styles/Work.module.scss";
+import utilStyles from "../../styles/utils.module.scss";
+import Image from "next/image";
 
 const Works = ({ projectData }: { projectData: IProjectData }) => {
   return (
-    <>
-      <div>this is work page</div>
-      <p>{projectData.projectName}</p>
-    </>
+    <main className={styles.main}>
+      <section className={styles.workSection}>
+        <p className={utilStyles.heading3Xl}>{projectData.projectName}</p>
+        {projectData.src && (
+          <Image
+            src={projectData.src}
+            height={300}
+            width={500}
+            alt={projectData.id}
+          ></Image>
+        )}
+      </section>
+    </main>
   );
 };
 

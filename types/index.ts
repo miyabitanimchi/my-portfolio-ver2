@@ -3,7 +3,7 @@ export interface IProjectData {
   projectName: string;
   feature: string;
   status: string;
-  photoUrl: string;
+  src: string;
   teckStack: string[];
   website: string;
   gitHub: string;
