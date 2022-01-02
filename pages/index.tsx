@@ -65,12 +65,8 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className={styles.arrowWrap}>
-            <div className={styles.arrow}></div>
-            <div className={styles.arrowTip}></div>
+            <span className={styles.arrow}></span>
           </div>
-          {/* <div className={styles.navigator}>
-            <CgArrowLongDown className={styles.arrow} />
-          </div> */}
         </section>
         <section className={styles.aboutSection}>
           <div className={styles.aboutContainer}>

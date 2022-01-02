@@ -7,30 +7,13 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  color: $title-color;
+  color: $main-font-color;
   margin-top: 5rem;
   padding: 0 2rem;
   .heroSection {
     position: relative;
     margin-bottom: $section-mb;
     display: flex;
-    // .navigator {
-    //   width: 14rem;
-    //   height: 14rem;
-    //   border-radius: 50%;
-    //   background-color: $second-bg-color;
-    //   position: absolute;
-    //   top: 7%;
-    //   right: 11%;
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   cursor: pointer;
-    //   .arrow {
-    //     font-size: 5rem;
-    //     color: $light-gray;
-    //   }
-    // }
     .heroWrap {
       width: 100%;
       overflow: hidden;
@@ -44,28 +27,37 @@
         overflow: hidden;
         height: auto;
         .jobPosition {
-          animation: bottomToTop 1s 0.7s;
+          animation: bottomToTop 1s;
         }
       }
     }
     .arrowWrap {
-      position: relative;
-      padding: 0 2rem;
-      margin-left: 3vw;
-      cursor: pointer;
       .arrow {
-        height: 45rem;
-        border-right: 2.5px solid $dark-gray;
-        margin-top: 2rem;
-      }
-      .arrowTip {
-        clip-path: polygon(20% 0, 50% 100%, 80% 0);
-        background-color: $dark-gray;
-        width: 3.5rem;
-        height: 7rem;
-        position: absolute;
-        bottom: -5%;
-        left: 9%;
+        cursor: pointer;
+        width: 50px;
+        height: 100%;
+        display: grid;
+        overflow: hidden;
+        &::before,
+        &::after {
+          content: "";
+          grid-area: 1/1;
+          background: $light-gray;
+          clip-path: polygon(
+            52% 0,
+            52% 80%,
+            70% 80%,
+            50% 100%,
+            30% 80%,
+            48% 80%,
+            48% 0
+          );
+          animation: arrowAnimation 2s infinite;
+          transform: translate(0, calc(0% + var(--s, 0%)));
+        }
+        &:after {
+          --s: -100%;
+        }
       }
     }
   }
