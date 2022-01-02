@@ -1,5 +1,5 @@
 export interface IProjectData {
-  id: number;
+  id: string;
   projectName: string;
   feature: string;
   status: string;
