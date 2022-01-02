@@ -1,4 +1,6 @@
-const projectsData = [
+import { IProjectData } from "../types/index";
+
+const projectsData: IProjectData[] = [
   {
     id: 1,
     projectName: "Senpai Kohai",

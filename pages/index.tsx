@@ -4,7 +4,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import utilStyles from "../styles/utils.module.scss";
 import { GrLocation } from "react-icons/gr";
-import projectsData from "../projectsData/projectsdata";
+import Link from "next/link";
+import projectsData from "../projectsData/projectsData";
 
 const Home: NextPage = () => {
   return (
@@ -38,11 +39,13 @@ const Home: NextPage = () => {
               </h3>
             </div>
           </div>
-          <a className={styles.arrowWrap} href="#about-section">
-            <span className={styles.arrow}></span>
-          </a>
+          <Link href="#about">
+            <a className={styles.arrowWrap}>
+              <span className={styles.arrow}></span>
+            </a>
+          </Link>
         </section>
-        <section className={styles.aboutSection} id="about-section">
+        <section className={styles.aboutSection} id="about">
           <div className={styles.aboutContainer}>
             <h3 className={`${styles.title} ${utilStyles.heading2Xl}`}>
               Hello, I'm Miyabi :)
@@ -74,7 +77,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className={styles.workSection} id="work-section">
+        <section className={styles.workSection} id="works">
           <div className={styles.workContainer}>
             <h3
               className={`${utilStyles.headingJumbo} ${utilStyles.gradientGray} ${utilStyles.gradientTextKit} ${styles.title}`}
@@ -105,7 +108,7 @@ const Home: NextPage = () => {
             ))}
           </div>
         </section>
-        <section className={styles.contactSection} id="contact-section">
+        <section className={styles.contactSection} id="contact">
           <p className={utilStyles.headingLg}>
             Please Feel Free to Reach Out to Me!
           </p>

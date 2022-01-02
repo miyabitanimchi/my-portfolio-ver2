@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bona+Nova&family=Cormorant+Garamond:wght@300&family=Lora:ital@1&family=Nanum+Myeongjo&family=Playfair+Display&family=Quicksand&family=Taviraj:wght@200&display=swap");
+// color
 $main-bg-color: whitesmoke;
 $second-bg-color: rgb(240, 235, 235);
 $main-font-color: #333333;
 $light-gray: rgb(177, 175, 175);
 $dark-gray: #292e49;
+
+// font family
 $main-font-family: "Playfair Display", serif;
 $second-font-family: "Quicksand", sans-serif;
+
+// margin, padding
+$section-pt: 5rem;
 $section-mb: 20rem;
