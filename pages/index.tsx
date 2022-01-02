@@ -6,8 +6,10 @@ import utilStyles from "../styles/utils.module.scss";
 import { GrLocation } from "react-icons/gr";
 import Link from "next/link";
 import projectsData from "../projectsData/projectsData";
+import { GetStaticProps } from "next";
+import { IProjectData } from "../types";
 
-const Home: NextPage = () => {
+const Home = ({ projectsData }: { projectsData: IProjectData[] }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -85,26 +87,28 @@ const Home: NextPage = () => {
               Works
             </h3>
             {projectsData?.map((project) => (
-              <div className={styles.projectWrap} key={project.id}>
-                <p
-                  className={`${utilStyles.headingSecJumbo} ${utilStyles.gradientPinkBlue} ${utilStyles.gradientTextKit} ${styles.workTitle}`}
-                >
-                  {project.projectName}
-                </p>
-                <div className={styles.projectDetails}>
-                  <p className={utilStyles.heading2Xl}>
-                    {project.shortDescription}
-                  </p>
-                  <div className={styles.techStackWrap}>
-                    <div>Tech Stack {">>"} </div>
-                    {project.teckStack.map((techstack) => (
-                      <div className={styles.techStack} key={techstack}>
-                        <span>{techstack}</span>
-                      </div>
-                    ))}
+              <Link href={`/works/${project.id}`} key={project.id}>
+                <div className={styles.projectWrap}>
+                  <div
+                    className={`${utilStyles.headingSecJumbo} ${utilStyles.gradientPinkBlue} ${utilStyles.gradientTextKit} ${styles.workTitle}`}
+                  >
+                    {project.projectName}
+                  </div>
+                  <div className={styles.projectDetails}>
+                    <p className={utilStyles.heading2Xl}>
+                      {project.shortDescription}
+                    </p>
+                    <div className={styles.techStackWrap}>
+                      <div>Tech Stack {">>"} </div>
+                      {project.teckStack.map((techstack) => (
+                        <div className={styles.techStack} key={techstack}>
+                          <span>{techstack}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
@@ -124,6 +128,14 @@ const Home: NextPage = () => {
       </main>
     </div>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      projectsData,
+    },
+  };
 };
 
 export default Home;
