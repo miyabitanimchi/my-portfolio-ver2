@@ -3,32 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import utilStyles from "../styles/utils.module.scss";
-import {
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiJquery,
-  SiTypescript,
-  SiReact,
-  SiFirebase,
-  SiMaterialui,
-  SiRedux,
-  SiNextdotjs,
-  SiMongodb,
-  SiTailwindcss,
-  SiBootstrap,
-  SiExpress,
-  SiGithub,
-  SiGitlab,
-  SiFigma,
-  SiBitbucket,
-  SiHeroku,
-  SiSlack,
-  SiTrello,
-} from "react-icons/si";
-import { FaSass, FaNodeJs } from "react-icons/fa";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { CgArrowLongDown } from "react-icons/cg";
 import { GrLocation } from "react-icons/gr";
 import projectsData from "../projectsData/projectsdata";
 
@@ -42,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <section className={styles.heroSection}>
+        <section className={styles.heroSection} id="home-section">
           <div className={styles.heroWrap}>
             <div
               className={`${utilStyles.gradientTextKit} ${utilStyles.gradientPinkBlue}`}
@@ -64,11 +38,11 @@ const Home: NextPage = () => {
               </h3>
             </div>
           </div>
-          <div className={styles.arrowWrap}>
+          <a className={styles.arrowWrap} href="#about-section">
             <span className={styles.arrow}></span>
-          </div>
+          </a>
         </section>
-        <section className={styles.aboutSection}>
+        <section className={styles.aboutSection} id="about-section">
           <div className={styles.aboutContainer}>
             <h3 className={`${styles.title} ${utilStyles.heading2Xl}`}>
               Hello, I'm Miyabi :)
@@ -100,7 +74,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className={styles.workSection}>
+        <section className={styles.workSection} id="work-section">
           <div className={styles.workContainer}>
             <h3
               className={`${utilStyles.headingJumbo} ${utilStyles.gradientGray} ${utilStyles.gradientTextKit} ${styles.title}`}
@@ -131,7 +105,7 @@ const Home: NextPage = () => {
             ))}
           </div>
         </section>
-        <section className={styles.contactSection}>
+        <section className={styles.contactSection} id="contact-section">
           <p className={utilStyles.headingLg}>
             Please Feel Free to Reach Out to Me!
           </p>
