@@ -7,18 +7,40 @@ import utilStyles from "../../styles/utils.module.scss";
 import Image from "next/image";
 
 const Works = ({ projectData }: { projectData: IProjectData }) => {
+  const {
+    id,
+    projectName,
+    feature,
+    status,
+    src,
+    teckStack,
+    website,
+    gitHub,
+    shortDescription,
+    description,
+  } = projectData;
   return (
     <main className={styles.main}>
       <section className={styles.workSection}>
-        <p className={utilStyles.heading3Xl}>{projectData.projectName}</p>
-        {projectData.src && (
-          <Image
-            src={projectData.src}
-            height={300}
-            width={500}
-            alt={projectData.id}
-          ></Image>
-        )}
+        <h1 className={utilStyles.heading3Xl}>{projectName}</h1>
+        <h2 className={utilStyles.headingLg}>{shortDescription}</h2>
+        <p>{status}</p>
+        {src && <Image src={src} height={300} width={500} alt={id}></Image>}
+        <div>
+          <a href={website} target="_blank" rel="noopener noreferrer">
+            WEBSITE
+          </a>
+          <a href={gitHub} target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </div>
+        <div>
+          <h3>Tech Stack</h3>
+          {teckStack.map((techstack) => (
+            <span key={techstack}>{techstack}</span>
+          ))}
+        </div>
+        <p>{description}</p>
       </section>
     </main>
   );

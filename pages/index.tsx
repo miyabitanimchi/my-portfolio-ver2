@@ -54,14 +54,16 @@ const Home = ({ projectsData }: { projectsData: IProjectData[] }) => {
             </h3>
             <div className={styles.imgDescriptionWrap}>
               <div className={styles.imgWrap}>
-                <Image
-                  priority
-                  src="/images/miyabi.JPG"
-                  className={styles.image}
-                  height={300}
-                  width={300}
-                  alt="miyabi"
-                />
+                <div className={styles.imgBox}>
+                  <Image
+                    priority
+                    src="/images/miyabi.JPG"
+                    className={styles.image}
+                    alt="miyabi"
+                    layout="fill"
+                    objectFit="contain"
+                  />
+                </div>
                 <div
                   className={`${styles.imgDecoration} ${utilStyles.gradientPinkBlue}`}
                 ></div>

@@ -82,12 +82,18 @@
         align-items: flex-start;
         .imgWrap {
           position: relative;
-          .image {
+          .imgBox {
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
+
+            .image {
+              border-radius: 50%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+            }
           }
           .imgDecoration {
             width: 300px;
