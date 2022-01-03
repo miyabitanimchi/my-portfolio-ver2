@@ -1,0 +1,66 @@
+@import "../../../styles/abstructs/variables";
+@import "../../../styles/abstructs/mixins";
+@import "../../../styles//abstructs/animation";
+
+.heroSection {
+  position: relative;
+  margin-bottom: $section-mb;
+  padding-top: $section-pt;
+  @include smTablet {
+    margin-bottom: $section-mb-sm;
+  }
+  display: flex;
+  .heroWrap {
+    width: 100%;
+    overflow: hidden;
+    .heroFName {
+      animation: slideLeftToRight 0.7s;
+      padding: 1rem 0;
+    }
+    .heroLName {
+      animation: rightToLeft 0.7s;
+      padding: 1rem 0;
+    }
+    .jobPositionWrap {
+      overflow: hidden;
+      height: auto;
+      .jobPosition {
+        padding: 1rem 0;
+        margin-top: 0%;
+        animation: bottomToTop 2s;
+      }
+    }
+  }
+  .arrowWrap {
+    .arrow {
+      cursor: pointer;
+      width: 50px;
+      height: 100%;
+      display: grid;
+      overflow: hidden;
+      &::before,
+      &::after {
+        content: "";
+        grid-area: 1/1;
+        background: $light-gray;
+        clip-path: polygon(
+          52% 0,
+          52% 80%,
+          70% 80%,
+          50% 100%,
+          30% 80%,
+          48% 80%,
+          48% 0
+        );
+        animation: arrowAnimation 2s infinite;
+        transform: translate(0, calc(0% + var(--s, 0%)));
+      }
+      &::after {
+        --s: -100%;
+      }
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import "../../../styles/abstructs/variables";
+@import "../../../styles/abstructs/mixins";
+
+.aboutSection {
+  width: 100%;
+  margin-bottom: $section-mb;
+  padding-top: $section-pt;
+  @include smTablet {
+    margin-bottom: $section-mb-sm;
+  }
+  .aboutContainer {
+    padding: 0 5rem;
+    .title {
+      margin-bottom: 5rem;
+      padding-left: 1rem;
+      @include tablet {
+        text-align: center;
+      }
+    }
+    .imgDescriptionWrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      @include tablet {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .imgWrap {
+        position: relative;
+        .imgBox {
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+
+          .image {
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+          }
+        }
+        .imgDecoration {
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          position: absolute;
+          top: 10%;
+          left: 8%;
+        }
+      }
+      .descriptionWrap {
+        margin-left: 5rem;
+        .locationWrap {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+          .location {
+            margin-left: 0.2rem;
+          }
+        }
+        .description {
+          width: 50vw;
+        }
+      }
+    }
+  }
+}

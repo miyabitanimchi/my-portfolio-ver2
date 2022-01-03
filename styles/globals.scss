@@ -1,11 +1,15 @@
 @import "./abstructs/variables";
-
+@import "./abstructs/mixins";
+html,
 body {
   padding: 0;
   margin: 0;
   font-family: $main-font-family;
   background-color: $main-bg-color;
   box-sizing: border-box;
+  @include tablet {
+    overflow-x: hidden;
+  }
   a {
     color: inherit;
     text-decoration: none;

@@ -1,9 +1,19 @@
+@import "./abstructs/mixins";
+
 .headingJumbo {
   font-size: 15vw;
   text-transform: uppercase;
   line-height: 15rem;
   letter-spacing: 1rem;
   font-weight: 500;
+  @include tablet {
+    line-height: 10rem;
+    letter-spacing: 0.7rem;
+  }
+  @include smTablet {
+    line-height: 7rem;
+    letter-spacing: 0.5rem;
+  }
 }
 
 .headingSecJumbo {
@@ -11,6 +21,15 @@
   line-height: 9rem;
   letter-spacing: 0.12rem;
   font-weight: 100;
+  @include tablet {
+    line-height: 8rem;
+    letter-spacing: 0.1rem;
+  }
+  @include smTablet {
+    font-size: 8.5vw;
+    line-height: 6rem;
+    letter-spacing: 0.2rem;
+  }
 }
 
 .heading3Xl {
@@ -26,7 +45,7 @@
 }
 
 .headingXl {
-  font-size: 2rem;
+  font-size: 1.8vw;
   letter-spacing: 0.1rem;
   margin: 1rem auto;
 }

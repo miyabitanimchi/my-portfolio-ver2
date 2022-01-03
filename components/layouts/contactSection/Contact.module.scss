@@ -1,0 +1,21 @@
+@import "../../../styles/abstructs/variables";
+@import "../../../styles/abstructs/mixins";
+
+.contactSection {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .contactWrap {
+    text-align: center;
+    .contactTitle {
+      font-family: $second-font-family;
+    }
+    .emailLink {
+      padding-bottom: 0.3rem;
+      border-bottom: solid 2.5px;
+    }
+  }
+}

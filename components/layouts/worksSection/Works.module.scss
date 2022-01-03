@@ -1,0 +1,42 @@
+@import "../../../styles/abstructs/variables";
+@import "../../../styles/abstructs/mixins";
+
+.workSection {
+  width: 100%;
+  margin-bottom: $section-mb;
+  padding-top: $section-pt;
+  @include smTablet {
+    margin-bottom: $section-mb-sm;
+  }
+  .workContainer {
+    .title {
+      margin-bottom: 4rem;
+      border-bottom: 2px solid;
+    }
+    .projectWrap {
+      cursor: pointer;
+      padding: 1rem 0;
+      .workTitle {
+        transition: all 1s;
+        &:hover {
+          transform: translateX(2rem);
+        }
+
+        &:hover + .projectDetails {
+          opacity: 1;
+        }
+      }
+      .projectDetails {
+        margin-left: 2.5rem;
+        opacity: 0;
+        transition: all 1s;
+        .techStackWrap {
+          margin-top: 0.5rem;
+          display: flex;
+          gap: 1rem;
+          font-family: $second-font-family;
+        }
+      }
+    }
+  }
+}
