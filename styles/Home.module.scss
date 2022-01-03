@@ -163,12 +163,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .contactTitle {
-      font-family: $second-font-family;
-    }
-    .emailLink {
-      padding-bottom: 0.3rem;
-      border-bottom: solid 2.5px;
+    .contactWrap {
+      text-align: center;
+      .contactTitle {
+        font-family: $second-font-family;
+      }
+      .emailLink {
+        padding-bottom: 0.3rem;
+        border-bottom: solid 2.5px;
+      }
     }
   }
 }

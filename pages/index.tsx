@@ -8,6 +8,9 @@ import Link from "next/link";
 import projectsData from "../projectsData/projectsData";
 import { GetStaticProps } from "next";
 import { IProjectData } from "../types";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
+import SmoothScroll from "../components/ui/SmoothScroll";
 
 const Home = ({ projectsData }: { projectsData: IProjectData[] }) => {
   return (
@@ -48,7 +51,12 @@ const Home = ({ projectsData }: { projectsData: IProjectData[] }) => {
           </Link>
         </section>
         <section className={styles.aboutSection} id="about">
-          <div className={styles.aboutContainer}>
+          <ScrollAnimation
+            animateIn="animate__fadeIn"
+            delay={500}
+            className={styles.aboutContainer}
+            animateOnce={true}
+          >
             <h3 className={`${styles.title} ${utilStyles.heading2Xl}`}>
               Hello, I'm Miyabi :)
             </h3>
@@ -79,55 +87,69 @@ const Home = ({ projectsData }: { projectsData: IProjectData[] }) => {
                 </p>
               </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </section>
         <section className={styles.workSection} id="works">
           <div className={styles.workContainer}>
-            <h3
+            <ScrollAnimation
+              animateIn="animate__fadeInLeft"
+              animateOnce={true}
               className={`${utilStyles.headingJumbo} ${utilStyles.gradientGray} ${utilStyles.gradientTextKit} ${styles.title}`}
             >
               Works
-            </h3>
-            {projectsData?.map((project) => (
-              <Link href={`/works/${project.id}`} key={project.id}>
-                <div className={styles.projectWrap}>
-                  <div
-                    className={`${utilStyles.headingSecJumbo} ${utilStyles.gradientPinkBlue} ${utilStyles.gradientTextKit} ${styles.workTitle}`}
-                  >
-                    {project.projectName}
-                  </div>
-                  <div className={styles.projectDetails}>
-                    <p className={utilStyles.heading2Xl}>
-                      {project.shortDescription}
-                    </p>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="animate__fadeIn"
+              animateOnce={true}
+              delay={500}
+            >
+              {projectsData?.map((project) => (
+                <Link href={`/works/${project.id}`} key={project.id}>
+                  <div className={styles.projectWrap}>
                     <div
-                      className={`${styles.techStackWrap} ${utilStyles.headingLg}`}
+                      className={`${utilStyles.headingSecJumbo} ${utilStyles.gradientPinkBlue} ${utilStyles.gradientTextKit} ${styles.workTitle}`}
                     >
-                      <div>Tech Stack {">>"} </div>
-                      {project.teckStack.map((techstack) => (
-                        <div className={styles.techStack} key={techstack}>
-                          <span>{techstack}</span>
-                        </div>
-                      ))}
+                      {project.projectName}
+                    </div>
+                    <div className={styles.projectDetails}>
+                      <p className={utilStyles.heading2Xl}>
+                        {project.shortDescription}
+                      </p>
+                      <div
+                        className={`${styles.techStackWrap} ${utilStyles.headingLg}`}
+                      >
+                        <div>Tech Stack {">>"} </div>
+                        {project.teckStack.map((techstack) => (
+                          <div className={styles.techStack} key={techstack}>
+                            <span>{techstack}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+            </ScrollAnimation>
           </div>
         </section>
         <section className={styles.contactSection} id="contact">
-          <p className={`${utilStyles.headingLg} ${styles.contactTitle}`}>
-            Please feel free to contact me!
-          </p>
-          <a
-            href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Let%27s+talk&to=miyabitanimichi@gmail.com"
-            className={`${utilStyles.heading3Xl} ${styles.emailLink} ${utilStyles.gradientGray} ${utilStyles.gradientTextKit}`}
-            target="_blank"
-            rel="noopener noreferrer"
+          <ScrollAnimation
+            animateIn="animate__fadeInUp"
+            delay={200}
+            className={styles.contactWrap}
           >
-            miyabitanimichi@gmail.com
-          </a>
+            <p className={`${utilStyles.headingLg} ${styles.contactTitle}`}>
+              Please feel free to contact me!
+            </p>
+            <a
+              href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Let%27s+talk&to=miyabitanimichi@gmail.com"
+              className={`${utilStyles.heading3Xl} ${styles.emailLink} ${utilStyles.gradientGray} ${utilStyles.gradientTextKit}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              miyabitanimichi@gmail.com
+            </a>
+          </ScrollAnimation>
         </section>
       </main>
     </div>

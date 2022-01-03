@@ -1,6 +1,7 @@
 import React from "react";
 import { IProjectData } from "../../types/index";
 import { GetStaticProps, GetStaticPaths } from "next";
+import Link from "next/link";
 import projectsData from "../../projectsData/projectsData";
 import styles from "../../styles/Work.module.scss";
 import utilStyles from "../../styles/utils.module.scss";
@@ -67,6 +68,9 @@ const Works = ({ projectData }: { projectData: IProjectData }) => {
           ))}
         </div>
         <p className={styles.description}>{description}</p>
+        <Link href="/#works">
+          <a className={styles.goBackBtn}>Go Back</a>
+        </Link>
       </section>
     </main>
   );
