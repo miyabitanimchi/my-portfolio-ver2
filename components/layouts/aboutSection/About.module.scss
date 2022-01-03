@@ -52,6 +52,9 @@
       }
       .descriptionWrap {
         margin-left: 5rem;
+        @include tablet {
+          margin: 7rem 0 0;
+        }
         .locationWrap {
           display: flex;
           align-items: center;
@@ -62,6 +65,9 @@
         }
         .description {
           width: 50vw;
+          @include tablet {
+            width: 70vw;
+          }
         }
       }
     }

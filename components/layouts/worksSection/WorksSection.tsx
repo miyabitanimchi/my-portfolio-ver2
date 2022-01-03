@@ -36,11 +36,13 @@ const WorksSection = ({ projectsData }: { projectsData: IProjectData[] }) => (
                   className={`${styles.techStackWrap} ${utilStyles.headingXl}`}
                 >
                   <div>Tech Stack {">>"} </div>
+                  {/* <div> */}
                   {project.teckStack.map((techstack) => (
                     <div className={styles.techStack} key={techstack}>
                       <span>{techstack}</span>
                     </div>
                   ))}
+                  {/* </div> */}
                 </div>
               </div>
             </div>

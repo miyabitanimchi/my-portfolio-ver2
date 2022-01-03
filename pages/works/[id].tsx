@@ -6,6 +6,7 @@ import projectsData from "../../projectsData/projectsData";
 import styles from "../../styles/Work.module.scss";
 import utilStyles from "../../styles/utils.module.scss";
 import Image from "next/image";
+import Head from "next/head";
 
 const Works = ({ projectData }: { projectData: IProjectData }) => {
   const {
@@ -21,58 +22,69 @@ const Works = ({ projectData }: { projectData: IProjectData }) => {
     description,
   } = projectData;
   return (
-    <main className={styles.main}>
-      <section className={styles.workSection}>
-        <h1 className={utilStyles.heading3Xl}>{projectName}</h1>
-        <h2 className={utilStyles.headingLg}>{shortDescription}</h2>
-        <p className={styles.status}>{status}</p>
-        <div
-          className={`${styles.imgDecoration} ${utilStyles.gradientPinkBlue}`}
-        >
-          <div className={styles.imgBox}>
-            <Image
-              priority
-              src={src}
-              alt={id}
-              layout="fill"
-              objectFit="contain"
-              placeholder="blur"
-              blurDataURL={src}
-            ></Image>
+    <>
+      <Head>
+        <title>Miyabi Tanimichi | Works</title>
+        <meta name="description" content="Miyabi's Portfolio" />
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, width=device-width"
+        ></meta>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main className={styles.main}>
+        <section className={styles.workSection}>
+          <h1 className={utilStyles.heading3Xl}>{projectName}</h1>
+          <h2 className={utilStyles.headingLg}>{shortDescription}</h2>
+          <p className={styles.status}>{status}</p>
+          <div
+            className={`${styles.imgDecoration} ${utilStyles.gradientPinkBlue}`}
+          >
+            <div className={styles.imgBox}>
+              <Image
+                priority
+                src={src}
+                alt={id}
+                layout="fill"
+                objectFit="contain"
+                placeholder="blur"
+                blurDataURL={src}
+              ></Image>
+            </div>
           </div>
-        </div>
-        <div className={styles.linksWrap}>
-          <a
-            href={website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.link}
-          >
-            WEBSITE
-          </a>
-          <a
-            href={gitHub}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.link}
-          >
-            GitHub
-          </a>
-        </div>
-        <div className={styles.techStackWrap}>
-          <h3>Tech Stack</h3>
-          {teckStack.map((techstack) => (
-            <span className={styles.techStack} key={techstack}>
-              {techstack}
-            </span>
-          ))}
-        </div>
-        <p className={styles.description}>{description}</p>
-        <Link href="/#works">
-          <a className={styles.goBackBtn}>Go Back</a>
-        </Link>
-      </section>
-    </main>
+          <div className={styles.linksWrap}>
+            <a
+              href={website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              WEBSITE
+            </a>
+            <a
+              href={gitHub}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              GitHub
+            </a>
+          </div>
+          <div className={styles.techStackWrap}>
+            <h3>Tech Stack</h3>
+            {teckStack.map((techstack) => (
+              <span className={styles.techStack} key={techstack}>
+                {techstack}
+              </span>
+            ))}
+          </div>
+          <p className={styles.description}>{description}</p>
+          <Link href="/#works">
+            <a className={styles.goBackBtn}>Go Back</a>
+          </Link>
+        </section>
+      </main>
+    </>
   );
 };
 

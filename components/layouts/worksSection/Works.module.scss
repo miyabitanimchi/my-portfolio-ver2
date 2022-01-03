@@ -16,6 +16,9 @@
     .projectWrap {
       cursor: pointer;
       padding: 1rem 0;
+      @include tablet {
+        padding: 0;
+      }
       .workTitle {
         transition: all 1s;
         &:hover {
@@ -30,11 +33,19 @@
         margin-left: 2.5rem;
         opacity: 0;
         transition: all 1s;
+        @include tablet {
+          opacity: 1;
+          margin-left: 0;
+        }
         .techStackWrap {
           margin-top: 0.5rem;
           display: flex;
+          flex-wrap: wrap;
           gap: 1rem;
           font-family: $second-font-family;
+          @include tablet {
+            gap: 0.5rem;
+          }
         }
       }
     }

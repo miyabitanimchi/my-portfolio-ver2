@@ -9,5 +9,8 @@
     flex-direction: column;
     color: $main-font-color;
     padding: 0 2rem;
+    @include smMobile {
+      padding: 0 1rem;
+    }
   }
 }

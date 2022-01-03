@@ -14,6 +14,13 @@
     line-height: 7rem;
     letter-spacing: 0.5rem;
   }
+  @include mobile {
+    line-height: 5rem;
+    letter-spacing: 2rem;
+  }
+  @include smMobile {
+    letter-spacing: 0.3rem;
+  }
 }
 
 .headingSecJumbo {
@@ -26,9 +33,11 @@
     letter-spacing: 0.1rem;
   }
   @include smTablet {
-    font-size: 8.5vw;
     line-height: 6rem;
-    letter-spacing: 0.2rem;
+  }
+  @include mobile {
+    letter-spacing: 0.05rem;
+    line-height: 3rem;
   }
 }
 
