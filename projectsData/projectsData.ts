@@ -28,7 +28,7 @@ const projectsData: IProjectData[] = [
     projectName: "Musician First",
     feature: "React Application",
     status: "Team Work, Product",
-    src: "",
+    src: "/images/musician-first.png",
     teckStack: [
       "React.js",
       "Redux",
@@ -48,7 +48,7 @@ const projectsData: IProjectData[] = [
     projectName: "Global Developers",
     feature: "React Application",
     status: "Team Work, Product",
-    src: "",
+    src: "/images/lraough.png",
     teckStack: [
       "React.js",
       "Redux",

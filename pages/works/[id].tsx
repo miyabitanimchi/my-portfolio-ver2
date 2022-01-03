@@ -24,23 +24,49 @@ const Works = ({ projectData }: { projectData: IProjectData }) => {
       <section className={styles.workSection}>
         <h1 className={utilStyles.heading3Xl}>{projectName}</h1>
         <h2 className={utilStyles.headingLg}>{shortDescription}</h2>
-        <p>{status}</p>
-        {src && <Image src={src} height={300} width={500} alt={id}></Image>}
-        <div>
-          <a href={website} target="_blank" rel="noopener noreferrer">
+        <p className={styles.status}>{status}</p>
+        <div
+          className={`${styles.imgDecoration} ${utilStyles.gradientPinkBlue}`}
+        >
+          <div className={styles.imgBox}>
+            <Image
+              priority
+              src={src}
+              alt={id}
+              layout="fill"
+              objectFit="contain"
+              placeholder="blur"
+              blurDataURL={src}
+            ></Image>
+          </div>
+        </div>
+        <div className={styles.linksWrap}>
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
             WEBSITE
           </a>
-          <a href={gitHub} target="_blank" rel="noopener noreferrer">
+          <a
+            href={gitHub}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
             GitHub
           </a>
         </div>
-        <div>
+        <div className={styles.techStackWrap}>
           <h3>Tech Stack</h3>
           {teckStack.map((techstack) => (
-            <span key={techstack}>{techstack}</span>
+            <span className={styles.techStack} key={techstack}>
+              {techstack}
+            </span>
           ))}
         </div>
-        <p>{description}</p>
+        <p className={styles.description}>{description}</p>
       </section>
     </main>
   );

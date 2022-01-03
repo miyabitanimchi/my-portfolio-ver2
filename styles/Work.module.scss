@@ -5,11 +5,47 @@
   display: flex;
   flex-direction: column;
   .workSection {
-    margin-bottom: $section-mb;
     padding-top: $section-pt;
+    width: 43.75rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .status {
+      margin-bottom: 2rem;
+    }
+
+    .imgDecoration {
+      width: 43.75rem;
+      height: 31.25rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+      border-radius: 5px;
+      .imgBox {
+        width: 42.5rem;
+        height: 30rem;
+        position: relative;
+      }
+    }
+    .linksWrap {
+      margin-bottom: 2rem;
+      .link {
+        margin: 0 1rem;
+        text-decoration: underline;
+      }
+    }
+    .techStackWrap {
+      align-self: flex-start;
+      margin-bottom: 2rem;
+      .techStack {
+        margin-right: 1rem;
+      }
+    }
+    .description {
+      margin-bottom: 10rem;
+    }
   }
 }
