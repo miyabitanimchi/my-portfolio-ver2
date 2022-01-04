@@ -8,17 +8,17 @@ const HeroSection = () => (
     <h1>test in main</h1>
     <div className={styles.heroWrap}>
       <h1>test in heroWrap</h1>
-      <div
+      {/* <div
         className={`${utilStyles.gradientTextKit} ${utilStyles.gradientPinkBlue}`}
-      >
-        <h1>test in nameWrap</h1>
-        <h1 className={`${utilStyles.headingJumbo} ${styles.heroFName}`}>
-          Miyabi
-        </h1>
-        <h1 className={`${utilStyles.headingJumbo} ${styles.heroLName}`}>
-          Tanimichi
-        </h1>
-      </div>
+      > */}
+      <h1>test in nameWrap</h1>
+      <h1 className={`${utilStyles.headingJumbo} ${styles.heroFName}`}>
+        Miyabi
+      </h1>
+      <h1 className={`${utilStyles.headingJumbo} ${styles.heroLName}`}>
+        Tanimichi
+      </h1>
+      {/* </div> */}
       <div
         className={`${utilStyles.gradientTextKit} ${utilStyles.gradientGray} ${styles.jobPositionWrap}`}
       >
