@@ -14,7 +14,7 @@ const AboutSection = () => (
       animateOnce={true}
     >
       <h3 className={`${styles.title} ${utilStyles.heading2XlFixed}`}>
-        Hello, I'm Miyabi :)
+        Hello, I&apos;m Miyabi :)
       </h3>
       <div className={styles.imgDescriptionWrap}>
         <div className={styles.imgWrap}>
@@ -38,8 +38,8 @@ const AboutSection = () => (
             <p className={styles.location}>Vancouver, Canada</p>
           </div>
           <p className={`${styles.description} `}>
-            I'm a front end developer who is curious, motivated and always eager
-            to learn new skills.
+            I&apos;m a front end developer who is curious, motivated and always
+            eager to learn new skills.
           </p>
         </div>
       </div>

@@ -15,7 +15,7 @@ const Home = ({ projectsData }: { projectsData: IProjectData[] }) => {
     <div className={styles.container}>
       <Head>
         <title>Miyabi Tanimichi</title>
-        <meta name="description" content="Miyabi's Portfolio" />
+        <meta name="description" content="Miyabis Portfolio" />
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width"
