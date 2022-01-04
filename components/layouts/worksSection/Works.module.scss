@@ -32,7 +32,7 @@
         @include mobile {
           margin-bottom: 0.5rem;
         }
-        @include pc {
+        @include pc-min {
           &:hover {
             transform: translateX(2rem);
           }

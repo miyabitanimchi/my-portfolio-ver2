@@ -8,7 +8,7 @@ const Header = () => {
   console.log(router.asPath);
   return (
     <header className={styles.header}>
-      <nav>
+      <nav className={styles.nav}>
         <Link href="/#about">
           <a className={styles.menu}>About</a>
         </Link>

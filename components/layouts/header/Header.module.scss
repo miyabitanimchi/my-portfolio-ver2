@@ -1,20 +1,33 @@
 @import "../../../styles/abstructs/variables";
+@import "../../../styles/abstructs/mixins";
 
 .header {
   position: fixed;
   width: 100vw;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 1rem 2rem 1rem 0;
+  height: 5rem;
   top: 0;
   z-index: 1;
   background: rgba(255, 255, 255, 0);
+  @include tablet {
+    height: 3rem;
+  }
+  .nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include smMobile {
+      justify-content: space-between;
+      padding: 0 1rem;
+    }
+  }
   .menu {
     margin-right: 2rem;
     font-size: 1.2rem;
     font-family: $second-font-family;
     color: $main-font-color;
+    @include smMobile {
+      margin-right: 0;
+    }
   }
 }

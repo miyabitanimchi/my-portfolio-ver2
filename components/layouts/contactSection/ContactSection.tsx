@@ -10,12 +10,12 @@ const ContactSection = () => (
       delay={200}
       className={styles.contactWrap}
     >
-      <p className={`${utilStyles.headingLg} ${styles.contactTitle}`}>
+      <p className={`${utilStyles.headingXlFixed} ${styles.contactTitle}`}>
         Please feel free to contact me!
       </p>
       <a
         href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Let%27s+talk&to=miyabitanimichi@gmail.com"
-        className={`${utilStyles.heading3Xl} ${styles.emailLink} ${utilStyles.gradientGray} ${utilStyles.gradientTextKit}`}
+        className={`${utilStyles.heading3XlFixed} ${styles.emailLink} ${utilStyles.gradientGray} ${utilStyles.gradientTextKit}`}
         target="_blank"
         rel="noopener noreferrer"
       >

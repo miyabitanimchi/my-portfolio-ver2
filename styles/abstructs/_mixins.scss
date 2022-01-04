@@ -2,7 +2,8 @@ $s-mb: 480px;
 $sm: 640px;
 $s-tb: 768px;
 $tb: 1024px;
-$pc: 1025px;
+$s-mb-min: 481px;
+$pc-min: 1025px;
 
 @mixin smMobile {
   @media screen and (max-width: $s-mb) {
@@ -28,8 +29,14 @@ $pc: 1025px;
   }
 }
 
-@mixin pc {
-  @media screen and (min-width: $pc) {
+@mixin smMobile-min {
+  @media screen and (min-width: $s-mb-min) {
+    @content;
+  }
+}
+
+@mixin pc-min {
+  @media screen and (min-width: $pc-min) {
     @content;
   }
 }

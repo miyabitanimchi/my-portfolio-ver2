@@ -1,17 +1,46 @@
 @import "../../../styles/abstructs/variables";
+@import "../../../styles/abstructs/mixins";
 .footer {
   width: 100vw;
   height: 3rem;
+  @include smMobile {
+    height: 3.5rem;
+  }
   .contentWrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: $second-font-family;
-    font-size: 1.2rem;
     padding: 0 2rem;
-
-    .link {
-      margin-left: 1rem;
+    @include smMobile {
+      padding: 0 1rem;
+      font-size: 1.5rem;
+    }
+    .links {
+      font-size: 1.2rem;
+      @include mobile {
+        font-size: 1rem;
+      }
+      @include smMobile {
+        display: none;
+      }
+      .link {
+        margin-right: 1rem;
+      }
+    }
+    .iconLinks {
+      font-family: 1.9rem;
+      .link {
+        margin-right: 1rem;
+      }
+      @include smMobile-min {
+        display: none;
+      }
+    }
+    .copyRight {
+      @include smMobile {
+        font-size: 0.9rem;
+      }
     }
   }
 }
