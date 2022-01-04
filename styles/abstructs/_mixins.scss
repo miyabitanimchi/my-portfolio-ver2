@@ -5,7 +5,7 @@ $tb: 1024px;
 $pc: 1025px;
 
 @mixin smMobile {
-  @media screen and (max-width: $sm) {
+  @media screen and (max-width: $s-mb) {
     @content;
   }
 }

@@ -12,21 +12,34 @@
     .title {
       margin-bottom: 4rem;
       border-bottom: 2px solid;
+      @include smMobile {
+        margin-bottom: 3rem;
+      }
     }
     .projectWrap {
       cursor: pointer;
       padding: 1rem 0;
       @include tablet {
-        padding: 0;
+        padding: 0.5rem 0;
+      }
+      @include tablet {
+        &:active {
+          opacity: 0.6;
+        }
       }
       .workTitle {
         transition: all 1s;
-        &:hover {
-          transform: translateX(2rem);
+        @include mobile {
+          margin-bottom: 0.5rem;
         }
+        @include pc {
+          &:hover {
+            transform: translateX(2rem);
+          }
 
-        &:hover + .projectDetails {
-          opacity: 1;
+          &:hover + .projectDetails {
+            opacity: 1;
+          }
         }
       }
       .projectDetails {
@@ -45,6 +58,7 @@
           font-family: $second-font-family;
           @include tablet {
             gap: 0.5rem;
+            margin-top: 0.7rem;
           }
         }
       }

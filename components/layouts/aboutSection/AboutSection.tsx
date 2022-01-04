@@ -13,7 +13,7 @@ const AboutSection = () => (
       className={styles.aboutContainer}
       animateOnce={true}
     >
-      <h3 className={`${styles.title} ${utilStyles.heading2Xl}`}>
+      <h3 className={`${styles.title} ${utilStyles.heading2XlFixed}`}>
         Hello, I'm Miyabi :)
       </h3>
       <div className={styles.imgDescriptionWrap}>
