@@ -19,15 +19,25 @@
     width: 100%;
     overflow: hidden;
     .heroFName {
-      animation: slideLeftToRight 0.7s;
       padding: 1rem 0;
+      @include pc-min {
+        animation: slideLeftToRight 0.7s;
+      }
+      // @include tablet {
+      //   animation: fadeIn 0.7s;
+      // }
       @include mobile {
         padding: 0.5rem 0;
       }
     }
     .heroLName {
-      animation: rightToLeft 0.7s;
       padding: 1rem 0;
+      @include pc-min {
+        animation: rightToLeft 0.7s;
+      }
+      // @include tablet {
+      //   animation: fadeIn 0.7s;
+      // }
       @include mobile {
         padding: 0.5rem 0;
       }
@@ -38,7 +48,12 @@
       .jobPosition {
         padding: 1rem 0;
         margin-top: 0%;
-        animation: bottomToTop 2s;
+        @include pc-min {
+          animation: bottomToTop 2s;
+        }
+        // @include tablet {
+        //   animation: fadeIn 0.7s;
+        // }
         @include mobile {
           padding: 0.5rem 0;
           margin-bottom: 8rem;
