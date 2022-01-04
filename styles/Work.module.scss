@@ -1,9 +1,17 @@
 @import "../styles/abstructs/variables";
+@import "../styles/abstructs/mixins";
 
 .main {
   color: $main-font-color;
   display: flex;
   flex-direction: column;
+  padding: 5rem 2rem 0;
+  @include mobile {
+    padding: 0 2rem 0;
+  }
+  @include smMobile {
+    padding: 0 1.5rem;
+  }
   .workSection {
     padding-top: $section-pt;
     width: 43.75rem;
@@ -12,13 +20,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include smTablet {
+      width: 100%;
+    }
+    .projectName {
+      font-size: 3rem;
+      letter-spacing: 0.12rem;
+      @include mobile {
+        font-size: 2rem;
+      }
+    }
+    .shortDescription {
+      margin: 0.5rem 0 0.7rem;
+      text-align: center;
+    }
     .status {
       margin-bottom: 2rem;
+      // font-family: $second-font-family;
     }
 
     .imgDecoration {
       width: 43.75rem;
-      height: 31.25rem;
+      height: 27.56rem;
+      @include smTablet {
+        width: 100%;
+      }
+      @include mobile {
+        height: 23rem;
+      }
+      @include smMobile {
+        height: 18rem;
+      }
       display: flex;
       justify-content: center;
       align-items: center;
@@ -26,29 +58,46 @@
       border-radius: 5px;
       .imgBox {
         width: 42.5rem;
-        height: 30rem;
+        height: 26.2rem;
         position: relative;
+        @include tablet {
+          width: 95%;
+        }
       }
     }
     .linksWrap {
       margin-bottom: 2rem;
-      .link {
-        margin: 0 1rem;
-        text-decoration: underline;
-      }
+      font-family: $second-font-family;
     }
-    .techStackWrap {
-      align-self: flex-start;
-      margin-bottom: 2rem;
-      .techStack {
-        margin-right: 1rem;
-      }
+    .link {
+      margin: 0 1rem;
+      text-decoration: underline;
     }
-    .description {
-      margin-bottom: 5rem;
+  }
+  .techStackTitle {
+    align-self: flex-start;
+    margin-bottom: 0.3rem;
+  }
+  .techStackWrap {
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    @include smMobile {
+      align-self: center;
     }
-    .goBackBtn {
-      margin-bottom: 10rem;
+    .techStack {
+      margin-right: 1rem;
+      font-family: $second-font-family;
     }
+  }
+  .description {
+    margin-bottom: 5rem;
+    font-family: $second-font-family;
+  }
+  .goBackBtn {
+    margin-bottom: 10rem;
+    font-family: $second-font-family;
+    text-decoration: underline;
   }
 }

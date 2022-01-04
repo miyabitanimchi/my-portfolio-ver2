@@ -34,9 +34,11 @@ const Works = ({ projectData }: { projectData: IProjectData }) => {
       </Head>
       <main className={styles.main}>
         <section className={styles.workSection}>
-          <h1 className={utilStyles.heading3Xl}>{projectName}</h1>
-          <h2 className={utilStyles.headingLg}>{shortDescription}</h2>
-          <p className={styles.status}>{status}</p>
+          <h1 className={styles.projectName}>{projectName}</h1>
+          <h2 className={`${styles.shortDescription} ${utilStyles.headingLg}`}>
+            {shortDescription}
+          </h2>
+          <p className={`${styles.status} ${utilStyles.headingMd}`}>{status}</p>
           <div
             className={`${styles.imgDecoration} ${utilStyles.gradientPinkBlue}`}
           >
@@ -47,8 +49,6 @@ const Works = ({ projectData }: { projectData: IProjectData }) => {
                 alt={id}
                 layout="fill"
                 objectFit="contain"
-                placeholder="blur"
-                blurDataURL={src}
               ></Image>
             </div>
           </div>
@@ -70,12 +70,12 @@ const Works = ({ projectData }: { projectData: IProjectData }) => {
               GitHub
             </a>
           </div>
+          <h3 className={styles.techStackTitle}>Tech Stack</h3>
           <div className={styles.techStackWrap}>
-            <h3>Tech Stack</h3>
             {teckStack.map((techstack) => (
-              <span className={styles.techStack} key={techstack}>
+              <div className={styles.techStack} key={techstack}>
                 {techstack}
-              </span>
+              </div>
             ))}
           </div>
           <p className={styles.description}>{description}</p>
