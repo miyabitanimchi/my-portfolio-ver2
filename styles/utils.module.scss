@@ -4,39 +4,39 @@
   font-size: 15vw;
   text-transform: uppercase;
   line-height: 15rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   font-weight: 500;
   @include tablet {
     line-height: 10rem;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.05em;
   }
   @include smTablet {
     line-height: 7rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
   }
   @include mobile {
     line-height: 5rem;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
   }
   @include smMobile {
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
   }
 }
 
 .headingSecJumbo {
   font-size: 9vw;
   line-height: 9rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   font-weight: 100;
   @include tablet {
     line-height: 8rem;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
   }
   @include smTablet {
-    line-height: 2rem;
+    line-height: 5rem;
   }
   @include mobile {
-    letter-spacing: 0.05em;
+    letter-spacing: 0.005em;
     line-height: 3rem;
   }
 }
