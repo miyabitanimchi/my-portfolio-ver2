@@ -16,10 +16,10 @@
     align-items: center;
   }
   .heroWrap {
-    width: 100%;
-    // @include pc-min {
-    //   overflow: hidden;
-    // }
+    @include pc-min {
+      overflow: hidden;
+      width: 100%;
+    }
 
     .heroFName {
       padding: 1rem 0;
