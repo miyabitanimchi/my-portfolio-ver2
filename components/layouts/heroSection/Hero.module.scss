@@ -67,7 +67,7 @@
   .arrowWrap {
     .arrow {
       cursor: pointer;
-      width: 50px;
+      width: 40px;
       height: 100%;
       display: grid;
       overflow: hidden;
@@ -79,9 +79,9 @@
         clip-path: polygon(
           52% 0,
           52% 80%,
-          70% 80%,
+          90% 80%,
           50% 100%,
-          30% 80%,
+          10% 80%,
           48% 80%,
           48% 0
         );
