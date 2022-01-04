@@ -25,7 +25,7 @@ const Works = ({ projectData }: { projectData: IProjectData }) => {
     <>
       <Head>
         <title>Miyabi Tanimichi | Works</title>
-        <meta name="description" content="Miyabi's Portfolio" />
+        <meta name="description" content="Miyabis Portfolio" />
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width"
