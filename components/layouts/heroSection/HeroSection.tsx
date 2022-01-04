@@ -24,6 +24,7 @@ const HeroSection = () => (
         </h3>
       </div>
     </div>
+    <div className={styles.test}></div>
     <Link href="#about">
       <a className={styles.arrowWrap}>
         <span className={styles.arrow}></span>

@@ -9,7 +9,7 @@ const AboutSection = () => (
   <section className={styles.aboutSection} id="about">
     <ScrollAnimation
       animateIn="animate__fadeIn"
-      delay={500}
+      delay={300}
       className={styles.aboutContainer}
       animateOnce={true}
     >

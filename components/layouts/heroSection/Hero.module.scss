@@ -6,6 +6,7 @@
   position: relative;
   margin-bottom: $section-mb;
   padding-top: $section-pt;
+  display: flex;
   @include smTablet {
     margin-bottom: $section-mb-sm;
   }
