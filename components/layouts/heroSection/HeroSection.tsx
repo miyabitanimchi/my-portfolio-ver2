@@ -5,10 +5,13 @@ import Link from "next/link";
 
 const HeroSection = () => (
   <section className={styles.heroSection} id="home-section">
+    <h1>test in main</h1>
     <div className={styles.heroWrap}>
+      <h1>test in heroWrap</h1>
       <div
         className={`${utilStyles.gradientTextKit} ${utilStyles.gradientPinkBlue}`}
       >
+        <h1>test in nameWrap</h1>
         <h1 className={`${utilStyles.headingJumbo} ${styles.heroFName}`}>
           Miyabi
         </h1>
