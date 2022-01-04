@@ -17,7 +17,10 @@
   }
   .heroWrap {
     width: 100%;
-    overflow: hidden;
+    // @include pc-min {
+    //   overflow: hidden;
+    // }
+
     .heroFName {
       padding: 1rem 0;
       @include pc-min {
