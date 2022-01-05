@@ -36,8 +36,8 @@ const AboutSection = () => (
           <p className={`${styles.description} `}>
             I&apos;m a front end developer based in Vancouver, who is curious,
             motivated and always eager to learn new skills and improve myself.
-            I'm a developer who is willing to try new challenges and learn from
-            my failures.
+            I&apos;m a developer who is willing to try new challenges and learn
+            from my failures.
           </p>
           <p className={`${styles.description} `}>
             I&apos;m passionate about building websites that incorporate modern
@@ -59,8 +59,8 @@ const AboutSection = () => (
             about the web.
           </p>
           <p className={`${styles.description} `}>
-            I'm now seeking a full-time position and would be really happy if we
-            can discuss what I can bring to your team.
+            I&apos;m now seeking a full-time position and would be really happy
+            if we can discuss what I can bring to your team.
           </p>
           <p className={`${styles.description} `}>
             Thank you for visiting and viewing my portfolio site!
