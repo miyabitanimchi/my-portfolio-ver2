@@ -22,7 +22,7 @@ const projectsData: IProjectData[] = [
     gitHub: "https://github.com/shiv-chan/senpai-kohai",
     shortDescription: "Matching Platform for People in Tech",
     description:
-      'This is a matching platform to connect with junior and senior developers. Senpai (先輩) means "Senior", and Kohai (後輩) means "Junior" in Japanese. You can offer help Kohai and gain teaching opportunities as Senpai, and and you can ask for support as Kohai. This is a MERN stack application with using TypeScript, Tailwind CSS JWT token system and Cloudinary. This is a team project at school and I mainly worked on building Log in, Log out and reset password functions and UI, and the board page to blowse user\'s profiles. We are going to continue to grow this application with our passion to contribute to tech scene.',
+      'This is a matching platform to connect with junior and senior developers. Senpai (先輩) means "Senior", and Kohai (後輩) means "Junior" in Japanese. You can offer help Kohai and gain teaching opportunities as Senpai, and and you can ask for support as Kohai. This is a MERN stack application with using TypeScript, Tailwind CSS JWT token system and Cloudinary. This is a team project at school and I mainly worked on building Log in, Log out and reset password functions and UI, and the board page to browse user\'s profiles. We are going to continue to grow this application with our passion to contribute to tech scene.',
   },
   {
     id: "musician-first",
@@ -63,7 +63,7 @@ const projectsData: IProjectData[] = [
     gitHub: "https://github.com/sh1mot4ku/GDS",
     shortDescription: "Job Searching site for Developers and Designers",
     description:
-      "This is a job searching website for people working in tech globally. This is a product for a company called Lraough LLC., which is located in Los Angeles, California. This is a team project and taskes were managed with GitHub, Trello and Slack. I mainly built a search and sort functions for job listings, email notification function, validation check and also created UI on some pages. Through this working experience, I was also able to gain skills to discuss with a client and a web designer, and to offer them suggestions to create a better website.",
+      "This is a job searching website for people working in tech globally. This is a product for a company called Lraough LLC., which is located in Los Angeles, California. This is a team project and tasks were managed with GitHub, Trello and Slack. I mainly built a search and sort functions for job listings, email notification function, validation check and also created UI on some pages. Through this working experience, I was also able to gain skills to discuss with a client and a web designer, and to offer them suggestions to create a better website.",
   },
   {
     id: "my-portfolio",
@@ -76,7 +76,7 @@ const projectsData: IProjectData[] = [
     gitHub: "https://github.com/miyabitanimchi/my-portfolio-ver2",
     shortDescription: "My Portfolio Ver.2",
     description:
-      "This is my portfolio website ver.2 built with React.js, Next.js and TypeScript (The first version was made with HTML, Sass, JavaScript and PHP). Things I put on my effort was especially to learn Next.js, and keep simple but dynamic design with the smooth animation. Through the development, I was able to gain fundamentals of Next.js such as Dynamic Routes and Static Generation. As I explored the framework, I found it very good for performance and made me explore it even more. For this portfolio, I checked how it looks like with all the common breakpoints allready, but let me know if you see obviously strange layout, I would really appreciate it. :)",
+      "This is my portfolio website ver.2 built with React.js, Next.js and TypeScript (The first version was made with HTML, Sass, JavaScript and PHP). Things I put on my effort was especially to learn Next.js, and keep simple but dynamic design with the smooth animation. Through the development, I was able to gain fundamentals of Next.js such as Dynamic Routes and Static Generation. As I explored the framework, I found it very good for performance and made me explore it even more.",
   },
   {
     id: "flappy-buddy",
@@ -89,7 +89,7 @@ const projectsData: IProjectData[] = [
     gitHub: "https://miyabitanimchi.github.io/flappy_buddy",
     shortDescription: "Flappy Bird Game But with Fun Original Features!",
     description:
-      "This is Flappy Bird game (the original one is developed released in 2013 by Dong Nguyen) with two special features. One is that you can draw a character(your buddy!) on the HTML canvas and play the game with it. And the other one is that there are also bullets as obstacles and they make this game more harder and fun! I built the game one month after I started to learn JavaScript. I struggled a lot while coding, but I remember I was really happy that I didn't give up and could complete this project.",
+      "This is Flappy Bird game (the original one is developed released in 2013 by Dong Nguyen) with two special features. One is that you can draw a character(your buddy!) on the HTML canvas and play the game with it. And the other one is that there are also bullets as obstacles and they make this game more harder and fun! I built the game one month after I started to learn JavaScript.",
   },
 ];
 

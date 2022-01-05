@@ -6,7 +6,11 @@ const Footer = () => (
   <footer className={styles.footer}>
     <div className={styles.contentWrap}>
       <div className={styles.links}>
-        <a href="#" className={styles.link}>
+        <a
+          href="/Front_End_MiyabiT_Resume.pdf"
+          download="Front_End_MiyabiT_Resume.pdf"
+          className={styles.link}
+        >
           Resume
         </a>
         <a
