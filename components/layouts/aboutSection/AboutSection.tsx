@@ -16,6 +16,7 @@ const AboutSection = () => (
       <h3 className={`${styles.title} ${utilStyles.heading2XlFixed}`}>
         Hello, I&apos;m Miyabi :)
       </h3>
+
       <div className={styles.imgDescriptionWrap}>
         <div className={styles.imgWrap}>
           <div className={styles.imgBox}>
