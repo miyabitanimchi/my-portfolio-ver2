@@ -21,6 +21,7 @@
     .imgDescriptionWrap {
       display: flex;
       justify-content: space-evenly;
+      align-items: flex-start;
       @include tablet {
         flex-direction: column;
         justify-content: center;
@@ -60,6 +61,7 @@
       }
       .descriptionWrap {
         // margin-left: 5rem;
+        font-family: $second-font-family;
         width: 50%;
         @include tablet {
           margin: 7rem 0 0;
@@ -71,7 +73,8 @@
         .locationWrap {
           display: flex;
           align-items: center;
-          margin-bottom: 1rem;
+          justify-content: flex-start;
+          margin: 2rem 0;
           .location {
             margin-left: 0.2rem;
           }
@@ -81,6 +84,19 @@
           // @include tablet {
           //   text-align: center;
           // }
+          margin-bottom: 1rem;
+        }
+        .techTitle {
+          margin-top: 2rem;
+          margin-bottom: 0.6rem;
+          font-weight: bold;
+        }
+        .techStackWrap {
+          display: flex;
+          flex-wrap: wrap;
+          .techStack {
+            margin-right: 0.5rem;
+          }
         }
       }
     }

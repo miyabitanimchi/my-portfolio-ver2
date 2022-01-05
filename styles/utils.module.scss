@@ -100,6 +100,14 @@
   }
 }
 
+.headingLgFixed {
+  font-size: 1.5rem;
+  letter-spacing: 0.08rem;
+  @include mobile {
+    font-size: 1.2rem;
+  }
+}
+
 .headingXl {
   font-size: 1.8vw;
   letter-spacing: 0.1rem;
@@ -108,14 +116,6 @@
   }
   @include mobile {
     font-size: 3vw;
-  }
-}
-
-.headingLg {
-  font-size: 1.5rem;
-  letter-spacing: 0.08rem;
-  @include mobile {
-    font-size: 1.2rem;
   }
 }
 
@@ -128,7 +128,10 @@
 }
 
 .textMd {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  @include mobile {
+    font-size: 0.9rem;
+  }
 }
 
 .gradientPinkBlue {

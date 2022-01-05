@@ -35,7 +35,9 @@ const Works = ({ projectData }: { projectData: IProjectData }) => {
       <main className={styles.main}>
         <section className={styles.workSection}>
           <h1 className={styles.projectName}>{projectName}</h1>
-          <h2 className={`${styles.shortDescription} ${utilStyles.headingLg}`}>
+          <h2
+            className={`${styles.shortDescription} ${utilStyles.headingLgFixed}`}
+          >
             {shortDescription}
           </h2>
           <p className={`${styles.status} ${utilStyles.headingMd}`}>{status}</p>
