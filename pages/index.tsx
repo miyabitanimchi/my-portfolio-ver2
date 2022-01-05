@@ -15,7 +15,24 @@ const Home = ({ projectsData }: { projectsData: IProjectData[] }) => {
     <div className={styles.container}>
       <Head>
         <title>Miyabi Tanimichi</title>
-        <meta name="description" content="Miyabi's Portfolio" />
+        <meta name="description" content="Miyabi Tanimichi Portfolio" />
+        <meta
+          name="title"
+          property="og:title"
+          content="Miyabi Tanimichi Portfolio"
+        />
+        <meta property="og:type" content="Miyabi Tanimichi Portfolio" />
+        <meta
+          name="image"
+          property="og:image"
+          content="https://live.staticflickr.com/65535/51801176946_6aa8407670_z.jpg"
+        />
+        <meta
+          name="description"
+          property="og:description"
+          content="Miyabi Tanimichi Portfolio"
+        />
+        <meta name="author" content="Miyabi Tanimichi" />
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width"
