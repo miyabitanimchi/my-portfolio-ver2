@@ -5,7 +5,7 @@ const projectsData: IProjectData[] = [
     id: "senpai-kohai",
     projectName: "Senpai Kohai",
     feature: "MERN stack application",
-    status: "Team Work, Private",
+    status: "Collaborative Work",
     src: "/images/senpai-kohai.png",
     teckStack: [
       "React.js",
@@ -13,7 +13,7 @@ const projectsData: IProjectData[] = [
       "TypeScript",
       "Node.js",
       "Express",
-      "TailwindCSS",
+      "Tailwind CSS",
       "JWT",
       "Cloudinary",
     ],
@@ -21,13 +21,13 @@ const projectsData: IProjectData[] = [
     gitHub: "https://github.com/shiv-chan/senpai-kohai",
     shortDescription: "Matching Platform for People in Tech",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin quis mi ut commodo. Nullam ultrices interdum elit vitae interdum. Nulla venenatis ornare condimentum. Nulla vel ante sed ex hendrerit accumsan ac at odio. Pellentesque vitae elementum justo. Nullam dictum diam ut gravida aliquam. Nulla blandit quam ipsum, eget facilisis sapien rhoncus consectetur. Suspendisse iaculis eros sed consectetur iaculis. Maecenas fermentum commodo mi, semper laoreet urna. Proin a arcu sapien. Quisque nec blandit lacus, eget tincidunt magna. Integer vitae neque eget lorem bibendum posuere. Nam ornare eleifend magna, eget pulvinar risus facilisis quis. Nullam eu consectetur justo.",
+      'This is a matching platform to connect with junior and senior developers. Senpai (先輩) means "Senior", and Kohai (後輩) means "Junior" in Japanese. You can offer help Kohai and gain teaching opportunities as Senpai, and and you can ask for support as Kohai. This is a MERN stack application with using TypeScript, Tailwind CSS JWT token system and Cloudinary. This is a team project at school and I mainly worked on building Log in, Log out and reset password functions and UI, and the board page to blowse user\'s profiles. We are going to continue to grow this application with our passion to contribute to tech scene.',
   },
   {
     id: "musician-first",
     projectName: "Musician First",
     feature: "React Application",
-    status: "Team Work, Product",
+    status: "Collaborative Work, Product",
     src: "/images/musician-first.jpg",
     teckStack: [
       "React.js",
@@ -36,18 +36,19 @@ const projectsData: IProjectData[] = [
       "Node.js",
       "Material UI",
       "Sass",
+      "Stripe",
     ],
-    website: "",
-    gitHub: "",
+    website: "https://www.musicianfirst.ca",
+    gitHub: "https://github.com/BlackStone8960/Musician-First",
     shortDescription: "Matching Platform for Musicians",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin quis mi ut commodo. Nullam ultrices interdum elit vitae interdum. Nulla venenatis ornare condimentum. Nulla vel ante sed ex hendrerit accumsan ac at odio. Pellentesque vitae elementum justo. Nullam dictum diam ut gravida aliquam. Nulla blandit quam ipsum, eget facilisis sapien rhoncus consectetur. Suspendisse iaculis eros sed consectetur iaculis. Maecenas fermentum commodo mi, semper laoreet urna. Proin a arcu sapien. Quisque nec blandit lacus, eget tincidunt magna. Integer vitae neque eget lorem bibendum posuere. Nam ornare eleifend magna, eget pulvinar risus facilisis quis. Nullam eu consectetur justo.",
+      "This is a matching platform to connect with musicians and music producers, and help them develop their music activities. This is a product for a start-up company, Musician First located in Toronto, Canada. Main features of this application are a search function by different genres, chat function and payment system for when a business deal is closed between a musician and a music producer. The product is built by a team, and my main roles were to implement search functions, a contact form, and some inportant features on the chat function such as an email notification function and a function to count unread messages. While I developed the functionality, also I tested each function and fixed bugs accordingly. Musician Fisrt has first launched for desktop users, but the mobile version will be come out soon and their final goal is to release the app as a native application.",
   },
   {
     id: "global-developers",
     projectName: "Global Developers",
     feature: "React Application",
-    status: "Team Work, Product",
+    status: "Collaborative Work, Product",
     src: "/images/gds.jpg",
     teckStack: [
       "React.js",
@@ -58,23 +59,23 @@ const projectsData: IProjectData[] = [
       "Sass",
     ],
     website: "",
-    gitHub: "",
+    gitHub: "https://github.com/sh1mot4ku/GDS",
     shortDescription: "Job Searching site for Developers and Designers",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin quis mi ut commodo. Nullam ultrices interdum elit vitae interdum. Nulla venenatis ornare condimentum. Nulla vel ante sed ex hendrerit accumsan ac at odio. Pellentesque vitae elementum justo. Nullam dictum diam ut gravida aliquam. Nulla blandit quam ipsum, eget facilisis sapien rhoncus consectetur. Suspendisse iaculis eros sed consectetur iaculis. Maecenas fermentum commodo mi, semper laoreet urna. Proin a arcu sapien. Quisque nec blandit lacus, eget tincidunt magna. Integer vitae neque eget lorem bibendum posuere. Nam ornare eleifend magna, eget pulvinar risus facilisis quis. Nullam eu consectetur justo.",
+      "This is a job searching website for people working in tech globally. This is a product for a company called Lraough LLC., which is located in Los Angeles, California. This is a team project and taskes were managed with GitHub, Trello and Slack. I mainly built a search and sort functions for job listings, email notification function, validation check and also created UI on some pages. Through this working experience, I was also able to gain skills to discuss with a client and a web designer, and to offer them suggestions to create a better website.",
   },
   {
     id: "my-portfolio",
     projectName: "My Portfolio",
     feature: "React Application with TypeScript and Next.js",
-    status: "Individual, Private",
+    status: "Individual Work",
     src: "/images/my-portfolio-ver2.jpg",
     teckStack: ["React.js", "Next.js", "TypeScript", "Sass"],
     website: "",
-    gitHub: "",
+    gitHub: "https://github.com/miyabitanimchi/my-portfolio-ver2",
     shortDescription: "My Portfolio Ver.2",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin quis mi ut commodo. Nullam ultrices interdum elit vitae interdum. Nulla venenatis ornare condimentum. Nulla vel ante sed ex hendrerit accumsan ac at odio. Pellentesque vitae elementum justo. Nullam dictum diam ut gravida aliquam. Nulla blandit quam ipsum, eget facilisis sapien rhoncus consectetur. Suspendisse iaculis eros sed consectetur iaculis. Maecenas fermentum commodo mi, semper laoreet urna. Proin a arcu sapien. Quisque nec blandit lacus, eget tincidunt magna. Integer vitae neque eget lorem bibendum posuere. Nam ornare eleifend magna, eget pulvinar risus facilisis quis. Nullam eu consectetur justo.",
+      "This is my portfolio website ver.2 built with React.js, Next.js and TypeScript (The first version was made with HTML, Sass, JavaScript and PHP). Things I put on my effort was especially to learn Next.js, and keep simple but dynamic design with the smooth animation. Through the development, I was able to gain fundamentals of Next.js such as Dynamic Routes and Static Generation. As I explored the framework, I found it very good for performance and made me explore it even more. For this portfolio, I checked how it looks like with all the common breakpoints allready, but let me know if you see obviously strange layout, I would really appreciate it. :)",
   },
 ];
 

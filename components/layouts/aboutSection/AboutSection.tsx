@@ -35,27 +35,35 @@ const AboutSection = () => (
         <div className={`${styles.descriptionWrap} ${utilStyles.textMd}`}>
           <p className={`${styles.description} `}>
             I&apos;m a front end developer based in Vancouver, who is curious,
-            motivated and always eager to learn new skills and inprove myself. A
-            developer who is willing to try for a new challenge and learn from
-            failures.
+            motivated and always eager to learn new skills and improve myself.
+            I'm a developer who is willing to try new challenges and learn from
+            my failures.
           </p>
           <p className={`${styles.description} `}>
             I&apos;m passionate about building websites that incorporate modern
-            technologies and design, and also love to think about logic even
-            though sometimes they are complex.
+            technologies and design, and I also love to find solutions to
+            complex technological problems.
           </p>
           <p className={`${styles.description} `}>
-            My exciting journey to become a developer started only a year ago,
-            however, I have worked for 3 real products in companies/start-up in
-            the year, and offered ideas to clients and discuss with team members
-            for better UX/UI. While I have ability to enjoy solo works and to
-            search by myself to solve problems, I love collaborative works
-            because we can help and also learn a lot from each other.
+            My journey to become a developer started one year ago, and I have
+            already worked with 3 companies to develop products this year, and
+            offered ideas to clients and discussd with team members for better
+            UX/UI. While I enjoy working independently to solve problems, I also
+            love working collaboratively in teams to exchange new ideas and come
+            up with solutions.
           </p>
           <p className={`${styles.description} `}>
-            I specialize in front-end development especially using React.js, but
-            also enjoy exploring backend technologies with the aim to improve
-            productivity, performance and to gain deeper knowledge about web.
+            I specialize in front end development especially using React.js, but
+            I also enjoy exploring backend technologies with the aim of
+            improving productivity, performance and gaining a deeper knowledge
+            about the web.
+          </p>
+          <p className={`${styles.description} `}>
+            I'm now seeking a full-time position and would be really happy if we
+            can discuss what I can bring to your team.
+          </p>
+          <p className={`${styles.description} `}>
+            Thank you for visiting and viewing my portfolio site!
           </p>
           {/* <div className={styles.locationWrap}>
             <GrLocation />
@@ -72,6 +80,7 @@ const AboutSection = () => (
               <div className={styles.techStack}>jQuery |</div>
               <div className={styles.techStack}>PHP |</div>
               <div className={styles.techStack}>React.js |</div>
+              <div className={styles.techStack}>Redux |</div>
               <div className={styles.techStack}>Next.js |</div>
               <div className={styles.techStack}>Material UI |</div>
               <div className={styles.techStack}>Bootstrap |</div>
