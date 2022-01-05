@@ -13,6 +13,7 @@ const projectsData: IProjectData[] = [
       "TypeScript",
       "Node.js",
       "Express",
+      "MongoDB",
       "Tailwind CSS",
       "JWT",
       "Cloudinary",
@@ -76,6 +77,19 @@ const projectsData: IProjectData[] = [
     shortDescription: "My Portfolio Ver.2",
     description:
       "This is my portfolio website ver.2 built with React.js, Next.js and TypeScript (The first version was made with HTML, Sass, JavaScript and PHP). Things I put on my effort was especially to learn Next.js, and keep simple but dynamic design with the smooth animation. Through the development, I was able to gain fundamentals of Next.js such as Dynamic Routes and Static Generation. As I explored the framework, I found it very good for performance and made me explore it even more. For this portfolio, I checked how it looks like with all the common breakpoints allready, but let me know if you see obviously strange layout, I would really appreciate it. :)",
+  },
+  {
+    id: "flappy-buddy",
+    projectName: "Flappy Buddy",
+    feature: "Game built with vanilla JS and HTML canvas",
+    status: "Individual Work",
+    src: "/images/flappy-buddy.jpg",
+    teckStack: ["HTML", "CSS", "JavaScript"],
+    website: "https://github.com/miyabitanimchi/flappy_buddy",
+    gitHub: "https://miyabitanimchi.github.io/flappy_buddy",
+    shortDescription: "Flappy Bird Game But with Fun Original Features!",
+    description:
+      "This is Flappy Bird game (the original one is developed released in 2013 by Dong Nguyen) with two special features. One is that you can draw a character(your buddy!) on the HTML canvas and play the game with it. And the other one is that there are also bullets as obstacles and they make this game more harder and fun! I built the game one month after I started to learn JavaScript. I struggled a lot while coding, but I remember I was really happy that I didn't give up and could complete this project.",
   },
 ];
 
