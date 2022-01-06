@@ -3,49 +3,32 @@
 .headingJumbo {
   font-size: 15vw;
   text-transform: uppercase;
-  line-height: 15rem;
+  line-height: 110%;
   letter-spacing: 0.06em;
   font-weight: 500;
-  @include tablet {
-    line-height: 10rem;
-    letter-spacing: 0.05em;
-  }
-  @include smTablet {
-    line-height: 7rem;
-    letter-spacing: 0.04em;
-  }
-  @include mobile {
-    line-height: 5rem;
-    letter-spacing: 0.03em;
-  }
-  @include smMobile {
-    letter-spacing: 0.02em;
-  }
 }
 
 .headingSecJumbo {
   font-size: 9vw;
-  line-height: 9.5rem;
+  line-height: 120%;
   letter-spacing: 0.01em;
   font-weight: 100;
-  @include tablet {
-    line-height: 8rem;
-    letter-spacing: 0.01em;
-  }
-  @include smTablet {
-    line-height: 5rem;
-  }
-  @include mobile {
-    letter-spacing: 0.005em;
-    line-height: 3rem;
-  }
 }
 
-.heading3Xl {
-  font-size: 3rem;
-  letter-spacing: 0.12rem;
-  font-weight: 100;
-}
+// .heading3XlFixed {
+//   font-size: 2.5rem;
+//   letter-spacing: 0.12rem;
+//   font-weight: 100;
+//   @include smTablet {
+//     font-size: 1.7rem;
+//   }
+//   @include mobile {
+//     font-size: 1.5rem;
+//   }
+//   @include smMobile {
+//     font-size: 1.3rem;
+//   }
+// }
 
 .heading2Xl {
   font-size: 2.5vw;

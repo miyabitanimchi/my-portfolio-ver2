@@ -5,61 +5,65 @@
 .heroSection {
   position: relative;
   margin-bottom: $section-mb;
-  padding-top: $section-pt;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   @include smTablet {
     margin-bottom: $section-mb-sm;
   }
   @include tablet {
-    height: 90vh;
     display: flex;
     align-items: center;
   }
   .heroWrap {
-    width: 100%;
-    overflow: hidden;
-    // @include pc-min {
-    // }
+    display: flex;
 
-    .heroFName {
-      padding: 1rem 0;
-      @include pc-min {
-        animation: slideLeftToRight 0.7s;
-      }
-      // @include tablet {
-      //   animation: fadeIn 0.7s;
-      // }
-      @include mobile {
-        padding: 0.5rem 0;
-      }
-    }
-    .heroLName {
-      padding: 1rem 0;
-      @include pc-min {
-        animation: rightToLeft 0.7s;
-      }
-      // @include tablet {
-      //   animation: fadeIn 0.7s;
-      // }
-      @include mobile {
-        padding: 0.5rem 0;
-      }
-    }
-    .jobPositionWrap {
-      // overflow: hidden;
-      // height: auto;
-      .jobPosition {
-        padding: 1rem 0;
-        margin-top: 0%;
+    .titleWrap {
+      width: 100%;
+      overflow: hidden;
+
+      .heroFName {
+        // padding: 1rem 0;
         @include pc-min {
-          animation: bottomToTop 2s;
+          animation: slideLeftToRight 0.7s;
         }
         // @include tablet {
         //   animation: fadeIn 0.7s;
         // }
         @include mobile {
           padding: 0.5rem 0;
-          margin-bottom: 8rem;
+        }
+      }
+      .heroLName {
+        // padding: 1rem 0;
+        @include pc-min {
+          animation: rightToLeft 0.7s;
+        }
+        // @include tablet {
+        //   animation: fadeIn 0.7s;
+        // }
+        @include mobile {
+          padding: 0.5rem 0;
+        }
+      }
+      .jobPositionWrap {
+        // overflow: hidden;
+        // height: auto;
+        .jobPosition {
+          // padding: 1rem 0;
+          margin-top: 0%;
+          @include pc-min {
+            animation: bottomToTop 2s;
+          }
+          // @include tablet {
+          //   animation: fadeIn 0.7s;
+          // }
+          @include mobile {
+            padding: 0.5rem 0;
+            margin-bottom: 8rem;
+          }
         }
       }
     }
