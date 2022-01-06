@@ -37,7 +37,7 @@ const Home = ({ projectsData }: { projectsData: IProjectData[] }) => {
           name="viewport"
           content="initial-scale=1.0, width=device-width"
         ></meta>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://miyabitanimichi.com/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <HeroSection />
