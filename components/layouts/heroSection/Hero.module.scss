@@ -6,6 +6,7 @@
   position: relative;
   margin-bottom: $section-mb;
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +15,6 @@
     margin-bottom: $section-mb-sm;
   }
   @include tablet {
-    display: flex;
     align-items: center;
   }
   .heroWrap {
@@ -22,47 +22,36 @@
 
     .titleWrap {
       width: 100%;
-      overflow: hidden;
+      height: 100%;
 
       .heroFName {
-        // padding: 1rem 0;
         @include pc-min {
-          animation: slideLeftToRight 0.7s;
+          animation: leftToRight 1s;
         }
-        // @include tablet {
-        //   animation: fadeIn 0.7s;
-        // }
-        @include mobile {
+        @include tablet {
           padding: 0.5rem 0;
+          animation: fadeIn 1s ease-in;
         }
       }
       .heroLName {
-        // padding: 1rem 0;
         @include pc-min {
-          animation: rightToLeft 0.7s;
+          animation: rightToLeft 1s;
         }
-        // @include tablet {
-        //   animation: fadeIn 0.7s;
-        // }
-        @include mobile {
+        @include tablet {
           padding: 0.5rem 0;
+          animation: fadeIn 1s ease-in;
         }
       }
       .jobPositionWrap {
-        // overflow: hidden;
-        // height: auto;
         .jobPosition {
-          // padding: 1rem 0;
           margin-top: 0%;
           @include pc-min {
             animation: bottomToTop 2s;
           }
-          // @include tablet {
-          //   animation: fadeIn 0.7s;
-          // }
-          @include mobile {
+          @include tablet {
             padding: 0.5rem 0;
             margin-bottom: 8rem;
+            animation: fadeIn 1s ease-in;
           }
         }
       }

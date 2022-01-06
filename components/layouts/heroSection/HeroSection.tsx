@@ -12,11 +12,13 @@ const HeroSection = () => (
         >
           Miyabi
         </h1>
+
         <h1
           className={`${utilStyles.headingJumbo} ${styles.heroLName} ${utilStyles.gradientTextKit} ${utilStyles.gradientPinkBlue}`}
         >
           Tanimichi
         </h1>
+
         <div className={styles.jobPositionWrap}>
           <h3
             className={`${utilStyles.headingSecJumbo} ${styles.jobPosition} ${utilStyles.gradientTextKit} ${utilStyles.gradientGray}`}
