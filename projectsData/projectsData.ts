@@ -85,8 +85,8 @@ const projectsData: IProjectData[] = [
     status: "Individual Work",
     src: "/images/flappy-buddy.jpg",
     teckStack: ["HTML", "CSS", "JavaScript"],
-    website: "https://github.com/miyabitanimchi/flappy_buddy",
-    gitHub: "https://miyabitanimchi.github.io/flappy_buddy",
+    website: "https://miyabitanimchi.github.io/flappy_buddy",
+    gitHub: "https://github.com/miyabitanimchi/flappy_buddy",
     shortDescription: "Flappy Bird Game But with Fun Original Features!",
     description:
       "This is Flappy Bird game (the original one is developed released in 2013 by Dong Nguyen) with two special features. One is that you can draw a character(your buddy!) on the HTML canvas and play the game with it. And the other one is that there are also bullets as obstacles and they make this game more harder and fun! I built the game one month after I started to learn JavaScript.",

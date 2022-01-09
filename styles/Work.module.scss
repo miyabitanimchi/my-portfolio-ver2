@@ -1,5 +1,6 @@
 @import "../styles/abstructs/variables";
 @import "../styles/abstructs/mixins";
+@import "../styles/abstructs/animation";
 
 .main {
   color: $main-font-color;
@@ -20,12 +21,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fadeIn 2s;
+
     @include smTablet {
       width: 100%;
     }
     .projectName {
       font-size: 3rem;
       letter-spacing: 0.12rem;
+      margin-bottom: 2rem;
       @include mobile {
         font-size: 2rem;
       }

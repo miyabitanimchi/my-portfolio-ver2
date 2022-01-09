@@ -74,7 +74,9 @@ const Works = ({ projectData }: { projectData: IProjectData }) => {
               GitHub
             </a>
           </div>
-          <h3 className={styles.techStackTitle}>Tech Stack</h3>
+          <h3 className={`${styles.techStackTitle} ${utilStyles.headingMd}`}>
+            Tech Stack
+          </h3>
           <div className={styles.techStackWrap}>
             {teckStack.map((techstack) => (
               <div className={styles.techStack} key={techstack}>
