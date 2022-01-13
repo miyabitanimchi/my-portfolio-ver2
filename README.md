@@ -1,7 +1,10 @@
 # My Portfolio
 
-![my_portfolio_gif](https://user-images.githubusercontent.com/69213541/149286175-8cc0da1a-3c8e-4b08-8094-4bd871a37322.gif)<br/>
-[View my portfolio](https://miyabitanimichi.com)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/69213541/149286175-8cc0da1a-3c8e-4b08-8094-4bd871a37322.gif" alt="my-portfolio" /><br>
+  <a href="https://miyabitanimichi.com" target="_blank rel="noopener noreferrer">:point_right:<b>View my portfolio</b></a>
+</p>
+
 
 ## Layout
 
