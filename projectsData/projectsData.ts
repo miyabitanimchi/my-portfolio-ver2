@@ -79,6 +79,19 @@ const projectsData: IProjectData[] = [
       "This is my portfolio website ver.2 built with React.js, Next.js and TypeScript (The first version was made with HTML, Sass, JavaScript and PHP). Things I put on my effort was especially to learn Next.js, and keep simple but dynamic design with the smooth animation. Through the development, I was able to gain fundamentals of Next.js such as Dynamic Routes and Static Generation. As I explored the framework, I found it very good for performance and made me explore it even more.",
   },
   {
+    id: "bc-shop",
+    projectName: "BC Shop",
+    feature: "React eCommerce Application",
+    status: "Collaborative Work",
+    src: "/images/my-portfolio-ver2.jpg",
+    teckStack: ["React.js", "Firebase", "Sass"],
+    website: "https://bc-shop.herokuapp.com/",
+    gitHub: "https://github.com/miyabitanimchi/React-E-Commerce-App",
+    shortDescription: "React eCommerce Application",
+    description:
+      "This is a mock eCommerce application built with React.js, Sass and Firebase.",
+  },
+  {
     id: "flappy-buddy",
     projectName: "Flappy Buddy",
     feature: "Game built with vanilla JS and HTML canvas",
