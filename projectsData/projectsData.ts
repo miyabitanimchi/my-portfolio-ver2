@@ -81,15 +81,16 @@ const projectsData: IProjectData[] = [
   {
     id: "bc-shop",
     projectName: "BC Shop",
-    feature: "React eCommerce Application",
+    feature:
+      "React eCommerce Application with Firebase Authentication and Realtime Database",
     status: "Collaborative Work",
-    src: "/images/my-portfolio-ver2.jpg",
+    src: "/images/bc-shop.jpg",
     teckStack: ["React.js", "Firebase", "Sass"],
     website: "https://bc-shop.herokuapp.com/",
     gitHub: "https://github.com/miyabitanimchi/React-E-Commerce-App",
     shortDescription: "React eCommerce Application",
     description:
-      "This is a mock eCommerce application built with React.js, Sass and Firebase.",
+      "This is a mock eCommerce application built with React.js, Sass and Firebase. It has features to login with Google account(Firebase Authentication), search items by keyword and category, review items, add items to cart(Firebase Realtime Database), and edit an order on the cart page. My main roles for this project were to built its detail page, cart page and checkout page as well as implementing the functions.",
   },
   {
     id: "flappy-buddy",
