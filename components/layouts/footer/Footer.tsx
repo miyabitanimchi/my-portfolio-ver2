@@ -7,8 +7,8 @@ const Footer = () => (
     <div className={styles.contentWrap}>
       <div className={styles.links}>
         <a
-          href="/Front_End_MTanimichi_Resume.pdf"
-          download="Front_End_MTanimichi_Resume.pdf"
+          href="/Miyabi_Tanimichi_Resume.pdf"
+          download="Miyabi_Tanimichi_Resume.pdf"
           className={styles.link}
         >
           Resume
