@@ -67,10 +67,6 @@ const AboutSection = () => (
           <p className={`${styles.description} `}>
             Thank you for visiting and viewing my portfolio site!
           </p>
-          {/* <div className={styles.locationWrap}>
-            <GrLocation />
-            <p className={styles.location}>Vancouver, Canada</p>
-          </div> */}
           <div className={styles.techWrap}>
             <p className={styles.techTitle}>Technologies</p>
             <div className={styles.techStackWrap}>
@@ -84,6 +80,7 @@ const AboutSection = () => (
               <div className={styles.techStack}>React.js |</div>
               <div className={styles.techStack}>Redux |</div>
               <div className={styles.techStack}>Next.js |</div>
+              <div className={styles.techStack}>Angular |</div>
               <div className={styles.techStack}>Material UI |</div>
               <div className={styles.techStack}>Bootstrap |</div>
               <div className={styles.techStack}>Tailwind CSS |</div>
@@ -98,7 +95,9 @@ const AboutSection = () => (
               <div className={styles.techStack}>Trello |</div>
               <div className={styles.techStack}>Figma |</div>
               <div className={styles.techStack}>Heroku |</div>
-              <div className={styles.techStack}>Vercel </div>
+              <div className={styles.techStack}>Vercel | </div>
+              <div className={styles.techStack}>WordPress |</div>
+              <div className={styles.techStack}>Shopify </div>
             </div>
           </div>
         </div>
