@@ -1,11 +1,11 @@
-import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import styles from "./Works.module.scss";
-import utilStyles from "../../../styles/utils.module.scss";
-import Link from "next/link";
-import { IProjectData } from "../../../types";
+import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import styles from './Works.module.scss';
+import utilStyles from '../../../styles/utils.module.scss';
+import Link from 'next/link';
+import { ProjectData } from '../../../types';
 
-const WorksSection = ({ projectsData }: { projectsData: IProjectData[] }) => (
+const WorksSection = ({ projectsData }: { projectsData: ProjectData[] }) => (
   <section className={styles.workSection} id="works">
     <div className={styles.workContainer}>
       <ScrollAnimation
@@ -35,7 +35,7 @@ const WorksSection = ({ projectsData }: { projectsData: IProjectData[] }) => (
                 <div
                   className={`${styles.techStackWrap} ${utilStyles.headingXl}`}
                 >
-                  <div>Tech Stack {">>"} </div>
+                  <div>Tech Stack {'>>'} </div>
                   {project.teckStack.map((techstack) => (
                     <div className={styles.techStack} key={techstack}>
                       <span>{techstack}</span>

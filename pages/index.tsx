@@ -1,16 +1,16 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import styles from "../styles/Home.module.scss";
-import projectsData from "../projectsData/projectsData";
-import { GetStaticProps } from "next";
-import { IProjectData } from "../types";
-import "animate.css/animate.min.css";
-import AboutSection from "../components/layouts/aboutSection/AboutSection";
-import HeroSection from "../components/layouts/heroSection/HeroSection";
-import WorksSection from "../components/layouts/worksSection/WorksSection";
-import ContactSection from "../components/layouts/contactSection/ContactSection";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import styles from '../styles/Home.module.scss';
+import projectsData from '../projectsData/projectsData';
+import { GetStaticProps } from 'next';
+import { ProjectData } from '../types';
+import 'animate.css/animate.min.css';
+import AboutSection from '../components/layouts/aboutSection/AboutSection';
+import HeroSection from '../components/layouts/heroSection/HeroSection';
+import WorksSection from '../components/layouts/worksSection/WorksSection';
+import ContactSection from '../components/layouts/contactSection/ContactSection';
 
-const Home = ({ projectsData }: { projectsData: IProjectData[] }) => {
+const Home = ({ projectsData }: { projectsData: ProjectData[] }) => {
   return (
     <div className={styles.container}>
       <Head>

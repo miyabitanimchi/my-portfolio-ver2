@@ -1,14 +1,14 @@
-import React from "react";
-import { IProjectData } from "../../types/index";
-import { GetStaticProps, GetStaticPaths } from "next";
-import Link from "next/link";
-import projectsData from "../../projectsData/projectsData";
-import styles from "../../styles/Work.module.scss";
-import utilStyles from "../../styles/utils.module.scss";
-import Image from "next/image";
-import Head from "next/head";
+import React from 'react';
+import { ProjectData } from '../../types/index';
+import { GetStaticProps, GetStaticPaths } from 'next';
+import Link from 'next/link';
+import projectsData from '../../projectsData/projectsData';
+import styles from '../../styles/Work.module.scss';
+import utilStyles from '../../styles/utils.module.scss';
+import Image from 'next/image';
+import Head from 'next/head';
 
-const Works = ({ projectData }: { projectData: IProjectData }) => {
+const Works = ({ projectData }: { projectData: ProjectData }) => {
   const {
     id,
     projectName,
