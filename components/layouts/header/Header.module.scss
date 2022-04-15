@@ -20,12 +20,17 @@
     font-size: 2rem;
     transition: all 0.3s ease;
     cursor: pointer;
+    @include smMobile {
+      display: none;
+    }
   }
 
   .nav {
     margin-left: auto;
-    align-items: center;
+    // align-items: center;
     @include smMobile {
+      width: 100%;
+      display: flex;
       justify-content: space-between;
       padding: 0 1rem;
     }
@@ -37,6 +42,7 @@
     color: $main-font-color;
     @include smMobile {
       margin-right: 0;
+      font-size: 1rem;
     }
   }
 }
