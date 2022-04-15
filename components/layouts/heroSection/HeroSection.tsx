@@ -4,7 +4,7 @@ import utilStyles from "../../../styles/utils.module.scss";
 import Link from "next/link";
 
 const HeroSection = () => (
-  <section className={styles.heroSection} id="home-section">
+  <section className={styles.heroSection} id="top">
     <div className={styles.heroWrap}>
       <div className={styles.titleWrap}>
         <h1

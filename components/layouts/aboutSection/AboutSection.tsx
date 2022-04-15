@@ -11,7 +11,7 @@ const AboutSection = () => (
       animateIn="animate__fadeIn"
       delay={300}
       className={styles.aboutContainer}
-      animateOnce={true}
+      animateOnce
     >
       <h3 className={`${styles.title} ${utilStyles.heading2XlFixed}`}>
         Hello, I&apos;m Miyabi :)
