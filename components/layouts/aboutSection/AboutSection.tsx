@@ -3,7 +3,6 @@ import Image from "next/image";
 import ScrollAnimation from "react-animate-on-scroll";
 import styles from "./About.module.scss";
 import utilStyles from "../../../styles/utils.module.scss";
-import { GrLocation } from "react-icons/gr";
 
 const AboutSection = () => (
   <section className={styles.aboutSection} id="about">
