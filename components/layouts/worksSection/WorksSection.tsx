@@ -31,7 +31,6 @@ const WorksSection = ({ projectsData }: { projectsData: ProjectData[] }) => (
                 <div
                   className={`${styles.techStackWrap} ${utilStyles.headingXl}`}
                 >
-                  <div>Tech Stack {">>"} </div>
                   {project.teckStack.map((techstack) => (
                     <div className={styles.techStack} key={techstack}>
                       <span>{techstack}</span>
