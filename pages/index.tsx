@@ -1,14 +1,14 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import styles from '../styles/Home.module.scss';
-import projectsData from '../projectsData/projectsData';
-import { GetStaticProps } from 'next';
-import { ProjectData } from '../types';
-import 'animate.css/animate.min.css';
-import AboutSection from '../components/layouts/aboutSection/AboutSection';
-import HeroSection from '../components/layouts/heroSection/HeroSection';
-import WorksSection from '../components/layouts/worksSection/WorksSection';
-import ContactSection from '../components/layouts/contactSection/ContactSection';
+import type { NextPage } from "next";
+import Head from "next/head";
+import styles from "../styles/Home.module.scss";
+import projectsData from "../projectsData/projectsData";
+import { GetStaticProps } from "next";
+import { ProjectData } from "../types";
+import "animate.css/animate.min.css";
+import AboutSection from "../components/layouts/aboutSection/AboutSection";
+import HeroSection from "../components/layouts/heroSection/HeroSection";
+import WorksSection from "../components/layouts/worksSection/WorksSection";
+import ContactSection from "../components/layouts/contactSection/ContactSection";
 
 const Home = ({ projectsData }: { projectsData: ProjectData[] }) => {
   return (
@@ -25,7 +25,7 @@ const Home = ({ projectsData }: { projectsData: ProjectData[] }) => {
         <meta
           name="image"
           property="og:image"
-          content="https://live.staticflickr.com/65535/51801176946_6aa8407670_z.jpg"
+          content="https://live.staticflickr.com/65535/52219603439_db131d6d50_z.jpg"
         />
         <meta
           name="description"

@@ -34,7 +34,7 @@ const AboutSection = () => (
         </div>
         <div className={`${styles.descriptionWrap} ${utilStyles.textMd}`}>
           <p className={`${styles.description} `}>
-            I&apos;m a front-end developer based in Vancouver, BC. I&apos;m
+            I&apos;m a full stack developer based in Vancouver, BC. I&apos;m
             curious, motivated, and always eager to learn new skills and improve
             myself. I&apos;m not afraid to step out of my comfort zone and am
             ready to face new challenges and learn from my failures.

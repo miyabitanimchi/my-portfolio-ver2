@@ -23,7 +23,7 @@ const HeroSection = () => (
           <h3
             className={`${utilStyles.headingSecJumbo} ${styles.jobPosition} ${utilStyles.gradientTextKit} ${utilStyles.gradientGray}`}
           >
-            Front End Developer
+            Full Stack Developer
           </h3>
         </div>
       </div>
