@@ -67,7 +67,7 @@ const AboutSection = () => (
               <div className={styles.techStack}>Tailwind CSS |</div>
               <div className={styles.techStack}>Firebase |</div>
               <div className={styles.techStack}>Git |</div>
-              <div className={styles.techStack}>MongoDB |</div>
+              <div className={styles.techStack}>MongoDB</div>
             </div>
             <p className={styles.techSubTitle}>Other technologies I&apos;ve used in professional environment...</p>
             <div className={styles.techStackWrap}>
@@ -79,15 +79,15 @@ const AboutSection = () => (
               <div className={styles.techStack}>Material UI |</div>
               <div className={styles.techStack}>Bootstrap |</div>
               <div className={styles.techStack}>Stripe |</div>
-              <div className={styles.techStack}>Amazon S3</div>
-              <div className={styles.techStack}>Figma |</div>
+              <div className={styles.techStack}>Amazon S3 |</div>
+              <div className={styles.techStack}>Figma</div>
             </div>
             <p className={styles.techSubTitle}>Others...</p>
             <div className={styles.techStackWrap}>
               <div className={styles.techStack}>Next.js |</div>
               <div className={styles.techStack}>PHP |</div>
               <div className={styles.techStack}>Heroku |</div>
-              <div className={styles.techStack}>WordPress |</div>
+              <div className={styles.techStack}>WordPress</div>
             </div>
           </div>
         </div>
