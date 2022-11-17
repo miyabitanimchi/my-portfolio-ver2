@@ -47,20 +47,7 @@ const AboutSection = () => (
             exchange new ideas and come up with solutions.
           </p>
           <p className={`${styles.description} `}>
-            My journey to become a developer started at the end of 2020, and I
-            have already worked with three companies to develop products in
-            2021. And I&apos;m currently working for 3 companies with a
-            part-time position as a web developer gaining various experience and
-            skills in tech.
-          </p>
-          <p className={`${styles.description} `}>
-            I specialize in front end development especially with React.js, but
-            I also enjoy exploring backend technologies with the aim of
-            improving productivity, performance, and gaining a deeper
-            understanding of the web.
-          </p>
-          <p className={`${styles.description} `}>
-            I&apos;m now seeking a full-time position and would be really happy
+            I would be really happy
             if we can discuss what I can bring to your team.
           </p>
           <p className={`${styles.description} `}>
@@ -68,31 +55,39 @@ const AboutSection = () => (
           </p>
           <div className={styles.techWrap}>
             <p className={styles.techTitle}>Technologies</p>
+            <p className={styles.techSubTitle}>I&apos;m especially good with...</p>
             <div className={styles.techStackWrap}>
               <div className={styles.techStack}>React.js |</div>
-              <div className={styles.techStack}>Redux |</div>
-              <div className={styles.techStack}>Next.js |</div>
-              <div className={styles.techStack}>Angular |</div>
-              <div className={styles.techStack}>JavaScript |</div>
-              <div className={styles.techStack}>TypeScript |</div>
               <div className={styles.techStack}>Node.js |</div>
               <div className={styles.techStack}>Express |</div>
+              <div className={styles.techStack}>JavaScript |</div>
               <div className={styles.techStack}>HTML5 |</div>
               <div className={styles.techStack}>CSS3 |</div>
               <div className={styles.techStack}>Sass |</div>
-              <div className={styles.techStack}>PHP |</div>
+              <div className={styles.techStack}>Tailwind CSS |</div>
+              <div className={styles.techStack}>Firebase |</div>
+              <div className={styles.techStack}>Git |</div>
+              <div className={styles.techStack}>MongoDB |</div>
+            </div>
+            <p className={styles.techSubTitle}>Other technologies I&apos;ve used in professional environment...</p>
+            <div className={styles.techStackWrap}>
+              <div className={styles.techStack}>Redux |</div>
+              <div className={styles.techStack}>TypeScript |</div>
+              <div className={styles.techStack}>Angular |</div>
+              <div className={styles.techStack}>Angular Material |</div>
+              <div className={styles.techStack}>React Native |</div>
               <div className={styles.techStack}>Material UI |</div>
               <div className={styles.techStack}>Bootstrap |</div>
-              <div className={styles.techStack}>Tailwind CSS |</div>
-              <div className={styles.techStack}>Angular Material |</div>
-              <div className={styles.techStack}>Firebase |</div>
-              <div className={styles.techStack}>MongoDB |</div>
-              <div className={styles.techStack}>Git |</div>
-              <div className={styles.techStack}>Figma |</div>
-              <div className={styles.techStack}>Heroku |</div>
-              <div className={styles.techStack}>Vercel | </div>
-              <div className={styles.techStack}>WordPress |</div>
               <div className={styles.techStack}>Stripe |</div>
+              <div className={styles.techStack}>Amazon S3</div>
+              <div className={styles.techStack}>Figma |</div>
+            </div>
+            <p className={styles.techSubTitle}>Others...</p>
+            <div className={styles.techStackWrap}>
+              <div className={styles.techStack}>Next.js |</div>
+              <div className={styles.techStack}>PHP |</div>
+              <div className={styles.techStack}>Heroku |</div>
+              <div className={styles.techStack}>WordPress |</div>
             </div>
           </div>
         </div>
