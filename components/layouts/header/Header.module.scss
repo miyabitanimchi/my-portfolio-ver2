@@ -28,10 +28,9 @@
 
   .nav {
     margin-left: auto;
-    // align-items: center;
+    display: flex;
     @include smMobile {
       width: 100%;
-      display: flex;
       justify-content: space-between;
       padding: 0 1rem;
     }

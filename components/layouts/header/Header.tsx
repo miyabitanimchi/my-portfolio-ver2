@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./Header.module.scss";
 import utilStyles from "../../../styles/utils.module.scss";
+import { Montserrat } from "@next/font/google";
+
+const montserrat = Montserrat({weight: '400'})
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -38,14 +41,14 @@ const Header = () => {
         </div>
       </div>
       <nav className={styles.nav}>
-        <Link href="/#about">
-          <a className={styles.menu}>About</a>
+        <Link href="/#about" passHref>
+          <p className={[styles.menu, montserrat.className].join(" ")}>About</p>
         </Link>
-        <Link href="/#works">
-          <a className={styles.menu}>Works</a>
+        <Link href="/#works" passHref>
+          <p className={styles.menu}>Works</p>
         </Link>
-        <Link href="/#contact">
-          <a className={styles.menu}>Contact</a>
+        <Link href="/#contact" passHref>
+          <p className={styles.menu}>Contact</p>
         </Link>
       </nav>
     </header>

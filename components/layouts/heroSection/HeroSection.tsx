@@ -28,10 +28,10 @@ const HeroSection = () => (
         </div>
       </div>
       <div className={styles.test}></div>
-      <Link href="#about">
-        <a className={styles.arrowWrap}>
+      <Link href="#about" passHref>
+        <div className={styles.arrowWrap}>
           <span className={styles.arrow}></span>
-        </a>
+        </div>
       </Link>
     </div>
   </section>
