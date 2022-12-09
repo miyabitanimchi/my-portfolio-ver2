@@ -42,7 +42,7 @@ const Header = () => {
       </div>
       <nav className={styles.nav}>
         <Link href="/#about" passHref>
-          <p className={[montserrat.className].join(" ")}>About</p>
+          <p className={styles.menu}>About</p>
         </Link>
         <Link href="/#works" passHref>
           <p className={styles.menu}>Works</p>
