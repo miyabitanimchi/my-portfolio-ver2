@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.scss';
 import utilStyles from '../../../styles/utils.module.scss';
-import { Montserrat } from '@next/font/google';
-
-const montserrat = Montserrat({ weight: '400' });
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
