@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import styles from './Header.module.scss';
 import utilStyles from '../../../styles/utils.module.scss';
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
+  const { asPath } = useRouter();
 
   const toggleVisibility = () => {
     window && window.scrollY > window.innerHeight
@@ -17,24 +19,46 @@ const Header = () => {
   };
 
   useEffect(() => {
-    window && window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
-  }, []);
+    if (asPath.includes('/works/')) {
+      setIsVisible(true);
+    } else {
+      if (asPath === '/') setIsVisible(false);
+      window && window.addEventListener('scroll', toggleVisibility);
+      return () => window.removeEventListener('scroll', toggleVisibility);
+    }
+  }, [asPath]);
 
   return (
     <header className={styles.header}>
-      <div
-        className={` ${styles.logoWrap} ${
-          isVisible ? styles.visible : styles.hidden
-        } `}
-        onClick={scrollTop}
-      >
+      {asPath.includes('/works/') ? (
+        <Link href="/">
+          <div
+            className={` ${styles.logoWrap} ${
+              isVisible ? styles.visible : styles.hidden
+            } `}
+            onClick={scrollTop}
+          >
+            <div
+              className={`${utilStyles.gradientPinkBlue} ${utilStyles.gradientTextKit}`}
+            >
+              mt
+            </div>
+          </div>
+        </Link>
+      ) : (
         <div
-          className={`${utilStyles.gradientPinkBlue} ${utilStyles.gradientTextKit}`}
+          className={` ${styles.logoWrap} ${
+            isVisible ? styles.visible : styles.hidden
+          } `}
+          onClick={scrollTop}
         >
-          mt
+          <div
+            className={`${utilStyles.gradientPinkBlue} ${utilStyles.gradientTextKit}`}
+          >
+            mt
+          </div>
         </div>
-      </div>
+      )}
       <nav className={styles.nav}>
         <Link href="/#about" passHref>
           <p className={styles.menu}>About</p>
