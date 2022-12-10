@@ -86,7 +86,7 @@ const Works = ({ projectData }: { projectData: ProjectData }) => {
           </div>
           <p className={styles.description}>{description}</p>
           <Link href="/#works">
-            <a className={styles.goBackBtn}>Go Back</a>
+            <p className={styles.goBackBtn}>Go Back</p>
           </Link>
         </section>
       </main>

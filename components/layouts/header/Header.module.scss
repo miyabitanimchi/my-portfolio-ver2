@@ -1,5 +1,5 @@
-@import "../../../styles/abstructs/variables";
-@import "../../../styles/abstructs/mixins";
+@import '../../../styles/abstructs/variables';
+@import '../../../styles/abstructs/mixins';
 
 .header {
   position: fixed;
@@ -7,7 +7,9 @@
   height: 5rem;
   top: 0;
   z-index: 10;
-  background: $main-bg-color;
+  background-color: rgba(245, 245, 245, 0.8);
+  backdrop-filter: saturate(180%) blur(5px);
+  border-bottom: 1px solid $main-bg-color;
   display: flex;
   align-items: center;
   @include tablet {
