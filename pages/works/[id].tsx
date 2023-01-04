@@ -1,12 +1,19 @@
-import React from 'react';
-import { ProjectData } from '../../types/index';
-import { GetStaticProps, GetStaticPaths } from 'next';
-import Link from 'next/link';
-import projectsData from '../../projectsData/projectsData';
-import styles from '../../styles/Work.module.scss';
-import utilStyles from '../../styles/utils.module.scss';
-import Image from 'next/image';
-import Head from 'next/head';
+import React from "react";
+import { ProjectData } from "../../types/index";
+import { GetStaticProps, GetStaticPaths } from "next";
+import Link from "next/link";
+import projectsData from "../../projectsData/projectsData";
+import styles from "../../styles/Work.module.scss";
+import utilStyles from "../../styles/utils.module.scss";
+import Image from "next/image";
+import Head from "next/head";
+
+const NO_LINKS_WEBSITE: string[] = [
+  "senpai-kohai",
+  "global-developers",
+  "bc-shop",
+];
+const NO_LINKS_GITHUB: string[] = ["musician-first"];
 
 const Works = ({ projectData }: { projectData: ProjectData }) => {
   const {
@@ -61,7 +68,10 @@ const Works = ({ projectData }: { projectData: ProjectData }) => {
               href={website}
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.link}
+              className={[
+                styles.link,
+                NO_LINKS_WEBSITE.includes(id) && styles.noLink,
+              ].join(" ")}
             >
               WEBSITE
             </a>
@@ -69,7 +79,10 @@ const Works = ({ projectData }: { projectData: ProjectData }) => {
               href={gitHub}
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.link}
+              className={[
+                styles.link,
+                NO_LINKS_GITHUB.includes(id) && styles.noLink,
+              ].join(" ")}
             >
               GitHub
             </a>
