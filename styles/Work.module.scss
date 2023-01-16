@@ -78,6 +78,7 @@
       text-decoration: underline;
     }
     .noLink {
+      pointer-events: none;
       cursor: not-allowed;
     }
   }
