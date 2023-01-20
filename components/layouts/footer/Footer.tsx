@@ -51,7 +51,7 @@ const Footer = () => (
           <GrLinkedin />
         </a>
       </div>
-      <p className={styles.copyRight}>&copy; 2022 Miyabi Tanimichi</p>
+      <p className={styles.copyRight}>&copy; 2023 Miyabi Tanimichi</p>
     </div>
   </footer>
 );
